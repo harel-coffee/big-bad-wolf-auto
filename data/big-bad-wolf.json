@@ -1,0 +1,3418 @@
+[
+    {
+        "id": "Borms 0874",
+        "year": 1781,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0419",
+        "year": 1818,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0691",
+        "year": 1827,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0845",
+        "year": 1830,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0996",
+        "year": 1832,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0656",
+        "year": 1833,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 G 43",
+        "year": 1840,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "Borms 0785",
+        "year": 1848,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0826",
+        "year": 1848,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW 116 L 54",
+        "year": 1849,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KLUIS PLA 421 B 10",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW NOM ZZ 08",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KLUIS PLA 417 A 1",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KLUIS PLA 423 B 25",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KLUIS PLA 422 A 4",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KLUIS PLA 416 B 36",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KLUIS PLA 418 A 30",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KLUIS PLA 422 C 5",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KLUIS PLA 419 D 30",
+        "year": 1850,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "Borms 0921",
+        "year": 1851,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW 1088 D 81",
+        "year": 1858,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW P100805",
+        "year": 1859,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 1300",
+        "year": 1860,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 2846",
+        "year": 1860,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 3989",
+        "year": 1861,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW 1090 C 111",
+        "year": 1864,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 1646",
+        "year": 1864,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 A 36",
+        "year": 1865,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 3248",
+        "year": 1866,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 2285",
+        "year": 1866,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z1843",
+        "year": 1868,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 2153",
+        "year": 1870,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 2955",
+        "year": 1870,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW 1087 A 26",
+        "year": 1872,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "NBM Mfe 3027",
+        "year": 1875,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "NBM Mfm 700 300011",
+        "year": 1878,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW NOM W 13",
+        "year": 1880,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 25467",
+        "year": 1880,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "Borms 0285",
+        "year": 1880,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW SMC K 2133",
+        "year": 1880,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 3144",
+        "year": 1886,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW SMC K 1072",
+        "year": 1887,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "NBM Mfe 6219",
+        "year": 1888,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 48439",
+        "year": 1889,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 19093",
+        "year": 1890,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKC 199",
+        "year": 1890,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 5105",
+        "year": 1890,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z 2018",
+        "year": 1890,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW SMC K 1196",
+        "year": 1890,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "NBM Mfe 16087",
+        "year": 1891,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW NOM V 36 B",
+        "year": 1892,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 9851",
+        "year": 1893,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "NBM Mfm 701 400004",
+        "year": 1893,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 01926",
+        "year": 1894,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 10595",
+        "year": 1898,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 A 38",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW P100847",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1823",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW SMC K 2114",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW P100799",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 1401",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0143",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 4905",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 25722",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 A 27",
+        "year": 1900,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1543",
+        "year": 1904,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 3427",
+        "year": 1905,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW NOM ZA 14 A-2",
+        "year": 1905,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW NOM ZA 14 A",
+        "year": 1905,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 6735",
+        "year": 1906,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfm 701 400007",
+        "year": 1906,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 3885",
+        "year": 1907,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1476",
+        "year": 1907,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 4138",
+        "year": 1908,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKN 306",
+        "year": 1909,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 4040",
+        "year": 1909,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 A 34",
+        "year": 1909,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0458",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 6614",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 7183",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 6002",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ Z1811",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 3181",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0055",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 2089",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 2950",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 2972",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 2389",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 2748",
+        "year": 1910,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "Borms 0284",
+        "year": 1911,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 25723",
+        "year": 1911,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52072",
+        "year": 1912,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 8628",
+        "year": 1912,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 01920",
+        "year": 1913,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 00123",
+        "year": 1914,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 52069",
+        "year": 1916,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 25759",
+        "year": 1917,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 5533",
+        "year": 1918,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 1867",
+        "year": 1919,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "XKZZ 109",
+        "year": 1919,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XZZ 065",
+        "year": 1919,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1949",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKN 167",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 0948",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z0235",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 9255",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZZ 101",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKN 313",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 1422",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 2114",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z0550",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 26561",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z1842",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKP 588",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 24774",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0533",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 0701",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53276",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 2408",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKE 799",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1356",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW A104682",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 3125",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ Z2007",
+        "year": 1920,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 24338",
+        "year": 1925,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53000",
+        "year": 1929,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW A100156",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0531",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 10252",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1761",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ Z0306",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW SMC K 2140",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 9761",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 6917",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 0617",
+        "year": 1930,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1238",
+        "year": 1932,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW A100253",
+        "year": 1932,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 4807",
+        "year": 1934,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0177",
+        "year": 1935,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKP 242",
+        "year": 1936,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW 1087 A 117",
+        "year": 1937,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 0045",
+        "year": 1937,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0652",
+        "year": 1940,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKD 710",
+        "year": 1940,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 2003",
+        "year": 1940,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 2039",
+        "year": 1942,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKP 457",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 5389",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 0422",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 03351",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 2633",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 50438",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52086",
+        "year": 1943,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW Ki 1134",
+        "year": 1945,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW A100123",
+        "year": 1945,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW A103915",
+        "year": 1945,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "NBM Mfe 25168",
+        "year": 1946,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKE 874",
+        "year": 1946,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ Z5339",
+        "year": 1947,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 8185",
+        "year": 1948,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKB 984",
+        "year": 1948,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKP 821",
+        "year": 1948,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 51575",
+        "year": 1948,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 0207",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0263",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKE 500",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Kluitman 43",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKP 715",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKN 214",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 4718",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 2228",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKP 415",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3110",
+        "year": 1950,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3019",
+        "year": 1951,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3306",
+        "year": 1951,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1762",
+        "year": 1952,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKD 768",
+        "year": 1953,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW A100302",
+        "year": 1953,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 0449",
+        "year": 1953,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 51756",
+        "year": 1955,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1829",
+        "year": 1956,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53228",
+        "year": 1957,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52022",
+        "year": 1957,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 25857",
+        "year": 1957,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 52568",
+        "year": 1958,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 0479",
+        "year": 1958,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 4352",
+        "year": 1959,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 26074",
+        "year": 1959,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKW 3362",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 02940",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3599",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0950",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1671",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1517",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 1852",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 6242",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKE 686",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1151",
+        "year": 1960,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 51879",
+        "year": 1962,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52782",
+        "year": 1962,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53171",
+        "year": 1963,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53173",
+        "year": 1966,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52023",
+        "year": 1967,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3230",
+        "year": 1967,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1354",
+        "year": 1968,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 1506",
+        "year": 1968,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 8067",
+        "year": 1969,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53172",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 9836",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 9864",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 0951",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKY 493",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 02934",
+        "year": 1970,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53347",
+        "year": 1971,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 4015",
+        "year": 1971,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 53056",
+        "year": 1971,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 51957",
+        "year": 1973,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52843",
+        "year": 1973,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 5554",
+        "year": 1973,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 3603",
+        "year": 1973,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VD 40019 6",
+        "year": 1974,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 6009",
+        "year": 1974,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53081",
+        "year": 1974,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 6120",
+        "year": 1974,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "VD 940 6-1",
+        "year": 1975,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FE 1975 45",
+        "year": 1975,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "VE 40013 2",
+        "year": 1975,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FD 1976 40104",
+        "year": 1975,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FF 1977 4",
+        "year": 1976,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FF 1976 40005",
+        "year": 1976,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FD 1976 369",
+        "year": 1976,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53432",
+        "year": 1976,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FF 1977 2",
+        "year": 1977,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKY 325",
+        "year": 1977,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FD 1977 40122",
+        "year": 1977,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "GX 40009 3-1",
+        "year": 1977,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VD 1043 6-1",
+        "year": 1978,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FV 1978 40004",
+        "year": 1978,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW P100729",
+        "year": 1978,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FE 1979 40043",
+        "year": 1978,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 52118",
+        "year": 1979,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FE 1979 100",
+        "year": 1979,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "VD 1064 5-1",
+        "year": 1979,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "BPN B8009042",
+        "year": 1979,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53284",
+        "year": 1979,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 3215",
+        "year": 1980,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1726",
+        "year": 1980,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 3332",
+        "year": 1980,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKP 260",
+        "year": 1980,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FE 1986 40051",
+        "year": 1981,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 51934",
+        "year": 1981,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FA 1981 26",
+        "year": 1981,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW Ki 8785",
+        "year": 1981,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 50360",
+        "year": 1982,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FE 1982 40021",
+        "year": 1982,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW A101336",
+        "year": 1982,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VC 337 17-1",
+        "year": 1982,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKY 217",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53174",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 13723",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FA 1985 49",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VD 1655 3-1",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 41574",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FD 1983 40231",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FD 1984 711",
+        "year": 1983,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 10426",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52963",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FE 1984 40018",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 43399",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FA 1984 27",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5013249",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VE 210 4-1",
+        "year": 1984,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "VD 1701 1-1",
+        "year": 1985,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FA 1985 60",
+        "year": 1985,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "FF 1985 40010",
+        "year": 1985,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FA 1986 82",
+        "year": 1985,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 53474",
+        "year": 1985,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "6000772",
+        "year": 1986,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "FX 1986 19",
+        "year": 1986,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "6000164",
+        "year": 1987,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4003594",
+        "year": 1987,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5017890",
+        "year": 1987,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1230",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "2023946",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "2019055",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5012859",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "3004598",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "6000818",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "3002206",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "7000083",
+        "year": 1988,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52455",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5025648",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 0354",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2022446",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 52253",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4162374",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5026200",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 0885",
+        "year": 1989,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 9711",
+        "year": 1990,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2037232",
+        "year": 1990,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW BJ 35398",
+        "year": 1990,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2065741",
+        "year": 1990,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2038432",
+        "year": 1990,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4037724",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5039233",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2045328",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2042875",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "1009617",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5041205",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "1011407",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4041098",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2051851",
+        "year": 1991,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 16446",
+        "year": 1992,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5046128",
+        "year": 1992,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5046742",
+        "year": 1992,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW BJ 42421",
+        "year": 1992,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKE 123",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 0593",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 1999",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5050097",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 0740",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2071740",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1281",
+        "year": 1993,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKY 629",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5061329",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2076937",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "2084022",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5062699",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4064202",
+        "year": 1994,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5069593",
+        "year": 1995,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4094390",
+        "year": 1995,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4097271",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4086683",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5086710",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5088279",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2128844",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2124467",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4094953",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5086725",
+        "year": 1996,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 5151",
+        "year": 1997,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4113288",
+        "year": 1997,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4153877",
+        "year": 1997,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5125806",
+        "year": 1998,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4121221",
+        "year": 1998,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5133031",
+        "year": 1999,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 7548",
+        "year": 1999,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4139945",
+        "year": 1999,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4136359",
+        "year": 1999,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 6247",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4153875",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5146977",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 8464",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 5265",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKP 674",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 9023",
+        "year": 2000,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5160658",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "1028342",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2267819",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5160520",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2265002",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4184935",
+        "year": 2001,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5194483",
+        "year": 2002,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 0595",
+        "year": 2002,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5169557",
+        "year": 2002,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2227389",
+        "year": 2002,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 9510",
+        "year": 2002,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1206",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKR 9061",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4204161",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5185892",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 0266",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4199737",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5186753",
+        "year": 2003,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4207729",
+        "year": 2004,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKR 5390",
+        "year": 2004,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4212901",
+        "year": 2004,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1210",
+        "year": 2004,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5201886",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "3013533",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "3014574",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5212462",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "3007625",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "3010628",
+        "year": 2005,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1862",
+        "year": 2006,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5229033",
+        "year": 2006,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4227076",
+        "year": 2006,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW GW P100009",
+        "year": 2006,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4229105",
+        "year": 2006,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5230610",
+        "year": 2007,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4248580",
+        "year": 2007,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5235107",
+        "year": 2007,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5237627",
+        "year": 2007,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW P100008",
+        "year": 2007,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5251998",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5244567",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKZ 1033",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4262750",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "2267570",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4262746",
+        "year": 2008,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5256114",
+        "year": 2009,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5272290",
+        "year": 2009,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4269562",
+        "year": 2009,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5253377",
+        "year": 2009,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "2312538",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "2306241",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5263101",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4293570",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5271539",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4279118",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "12006526",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4280586",
+        "year": 2010,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5276973",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW XKW 2737",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5293912",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5273704",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5277162",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "5286008",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "KW XKZ 1713",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5280348",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 1,
+            "wolf": 0
+        }
+    },
+    {
+        "id": "4290642",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "5272036",
+        "year": 2011,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "4311131",
+        "year": 2012,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "14029101",
+        "year": 2013,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "KW GW A101524",
+        "year": 2013,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "14013747",
+        "year": 2013,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "14036517",
+        "year": 2014,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    },
+    {
+        "id": "14027694",
+        "year": 2014,
+        "definite": {
+            "Red Riding Hood": 0,
+            "wolf": 1
+        }
+    }
+]
