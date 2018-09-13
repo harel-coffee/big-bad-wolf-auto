@@ -372,7 +372,7 @@
         "year": 1890,
         "definite": {
             "Red Riding Hood": 0,
-            "wolf": 1
+            "wolf": 0
         }
     },
     {
@@ -420,7 +420,7 @@
         "year": 1893,
         "definite": {
             "Red Riding Hood": 0,
-            "wolf": 1
+            "wolf": 0
         }
     },
     {
@@ -564,7 +564,7 @@
         "year": 1906,
         "definite": {
             "Red Riding Hood": 1,
-            "wolf": 1
+            "wolf": 0
         }
     },
     {
@@ -2476,7 +2476,7 @@
         "year": 1991,
         "definite": {
             "Red Riding Hood": 0,
-            "wolf": 1
+            "wolf": 0
         }
     },
     {
@@ -2500,7 +2500,7 @@
         "year": 1992,
         "definite": {
             "Red Riding Hood": 0,
-            "wolf": 1
+            "wolf": 0
         }
     },
     {
