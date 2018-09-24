@@ -5,7 +5,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0419",
@@ -13,7 +14,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0691",
@@ -21,7 +23,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0845",
@@ -29,7 +32,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0996",
@@ -37,7 +41,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0656",
@@ -45,7 +50,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 1087 G 43",
@@ -53,7 +59,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0785",
@@ -61,7 +68,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0826",
@@ -69,7 +77,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 116 L 54",
@@ -77,7 +86,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 421 B 10",
@@ -85,7 +95,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW NOM ZZ 08",
@@ -93,7 +104,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 417 A 1",
@@ -101,7 +113,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 423 B 25",
@@ -109,7 +122,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KLUIS PLA 422 A 4",
@@ -117,7 +131,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 416 B 36",
@@ -125,7 +140,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 418 A 30",
@@ -133,7 +149,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 422 C 5",
@@ -141,7 +158,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KLUIS PLA 419 D 30",
@@ -149,7 +167,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0921",
@@ -157,7 +176,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 1088 D 81",
@@ -165,7 +185,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW GW P100805",
@@ -173,7 +194,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 1300",
@@ -181,7 +203,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2846",
@@ -189,7 +212,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 3989",
@@ -197,7 +221,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW 1090 C 111",
@@ -205,7 +230,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 1646",
@@ -213,7 +239,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 1087 A 36",
@@ -221,7 +248,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 3248",
@@ -229,7 +257,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 2285",
@@ -237,7 +266,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ Z1843",
@@ -245,7 +275,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 2153",
@@ -253,7 +284,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2955",
@@ -261,7 +293,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 1087 A 26",
@@ -269,7 +302,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 3027",
@@ -277,7 +311,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "NBM Mfm 700 300011",
@@ -285,7 +320,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW NOM W 13",
@@ -293,7 +329,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 25467",
@@ -301,7 +338,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "Borms 0285",
@@ -309,7 +347,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW SMC K 2133",
@@ -317,7 +356,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 3144",
@@ -325,7 +365,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW SMC K 1072",
@@ -333,7 +374,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 6219",
@@ -341,7 +383,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 48439",
@@ -349,7 +392,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "NBM Mfe 19093",
@@ -357,7 +401,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKC 199",
@@ -365,7 +410,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 5105",
@@ -373,7 +419,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ Z 2018",
@@ -381,7 +428,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW SMC K 1196",
@@ -389,7 +437,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 16087",
@@ -397,7 +446,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW NOM V 36 B",
@@ -405,7 +455,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 9851",
@@ -413,7 +464,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfm 701 400004",
@@ -421,7 +473,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 01926",
@@ -429,7 +482,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "NBM Mfe 10595",
@@ -437,7 +491,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW 1087 A 38",
@@ -445,7 +500,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW P100847",
@@ -453,7 +509,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1823",
@@ -461,7 +518,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW SMC K 2114",
@@ -469,7 +527,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW P100799",
@@ -477,7 +536,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 1401",
@@ -485,7 +545,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0143",
@@ -493,7 +554,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 4905",
@@ -501,7 +563,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 25722",
@@ -509,7 +572,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW 1087 A 27",
@@ -517,7 +581,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1543",
@@ -525,7 +590,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 3427",
@@ -533,7 +599,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW NOM ZA 14 A-2",
@@ -541,7 +608,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW NOM ZA 14 A",
@@ -549,7 +617,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 6735",
@@ -557,7 +626,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfm 701 400007",
@@ -565,7 +635,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 3885",
@@ -573,7 +644,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 1476",
@@ -581,7 +653,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 4138",
@@ -589,7 +662,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKN 306",
@@ -597,7 +671,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 4040",
@@ -605,7 +680,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW 1087 A 34",
@@ -613,7 +689,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0458",
@@ -621,7 +698,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 6614",
@@ -629,7 +707,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 7183",
@@ -637,7 +716,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 6002",
@@ -645,7 +725,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ Z1811",
@@ -653,7 +734,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 3181",
@@ -661,7 +743,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 0055",
@@ -669,7 +752,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2089",
@@ -677,7 +761,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2950",
@@ -685,7 +770,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2972",
@@ -693,7 +779,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 2389",
@@ -701,7 +788,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 2748",
@@ -709,7 +797,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "Borms 0284",
@@ -717,7 +806,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 25723",
@@ -725,7 +815,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52072",
@@ -733,7 +824,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 8628",
@@ -741,7 +833,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 01920",
@@ -749,7 +842,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 00123",
@@ -757,7 +851,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52069",
@@ -765,7 +860,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 25759",
@@ -773,7 +869,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 5533",
@@ -781,7 +878,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 1867",
@@ -789,7 +887,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "XKZZ 109",
@@ -797,7 +896,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XZZ 065",
@@ -805,7 +905,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 1949",
@@ -813,7 +914,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKN 167",
@@ -821,7 +923,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 0948",
@@ -829,7 +932,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ Z0235",
@@ -837,7 +941,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 9255",
@@ -845,7 +950,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZZ 101",
@@ -853,7 +959,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKN 313",
@@ -861,7 +968,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 1422",
@@ -869,7 +977,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 2114",
@@ -877,7 +986,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ Z0550",
@@ -885,7 +995,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 26561",
@@ -893,7 +1004,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ Z1842",
@@ -901,7 +1013,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKP 588",
@@ -909,7 +1022,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 24774",
@@ -917,7 +1031,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0533",
@@ -925,7 +1040,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0701",
@@ -933,7 +1049,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53276",
@@ -941,7 +1058,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 2408",
@@ -949,7 +1067,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKE 799",
@@ -957,7 +1076,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 1356",
@@ -965,7 +1085,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A104682",
@@ -973,7 +1094,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 3125",
@@ -981,7 +1103,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ Z2007",
@@ -989,7 +1112,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "NBM Mfe 24338",
@@ -997,7 +1121,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53000",
@@ -1005,7 +1130,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A100156",
@@ -1013,7 +1139,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0531",
@@ -1021,7 +1148,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 10252",
@@ -1029,7 +1157,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1761",
@@ -1037,7 +1166,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ Z0306",
@@ -1045,7 +1175,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW SMC K 2140",
@@ -1053,7 +1184,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 9761",
@@ -1061,7 +1193,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 6917",
@@ -1069,7 +1202,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 0617",
@@ -1077,7 +1211,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1238",
@@ -1085,7 +1220,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A100253",
@@ -1093,7 +1229,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 4807",
@@ -1101,7 +1238,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0177",
@@ -1109,7 +1247,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKP 242",
@@ -1117,7 +1256,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW 1087 A 117",
@@ -1125,7 +1265,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0045",
@@ -1133,7 +1274,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 0652",
@@ -1141,7 +1283,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKD 710",
@@ -1149,7 +1292,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 2003",
@@ -1157,7 +1301,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 2039",
@@ -1165,7 +1310,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKP 457",
@@ -1173,7 +1319,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 5389",
@@ -1181,7 +1328,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 0422",
@@ -1189,7 +1337,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 03351",
@@ -1197,7 +1346,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 2633",
@@ -1205,7 +1355,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 50438",
@@ -1213,7 +1364,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 52086",
@@ -1221,7 +1373,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 1134",
@@ -1229,7 +1382,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A100123",
@@ -1237,7 +1391,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A103915",
@@ -1245,7 +1400,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "NBM Mfe 25168",
@@ -1253,7 +1409,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKE 874",
@@ -1261,7 +1418,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ Z5339",
@@ -1269,7 +1427,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 8185",
@@ -1277,7 +1436,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKB 984",
@@ -1285,7 +1445,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKP 821",
@@ -1293,7 +1454,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 51575",
@@ -1301,7 +1463,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0207",
@@ -1309,7 +1472,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 0263",
@@ -1317,7 +1481,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKE 500",
@@ -1325,7 +1490,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Kluitman 43",
@@ -1333,7 +1499,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKP 715",
@@ -1341,7 +1508,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKN 214",
@@ -1349,7 +1517,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 4718",
@@ -1357,7 +1526,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 2228",
@@ -1365,7 +1535,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKP 415",
@@ -1373,7 +1544,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 3110",
@@ -1381,7 +1553,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 3019",
@@ -1389,7 +1562,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 3306",
@@ -1397,7 +1571,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 1762",
@@ -1405,7 +1580,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKD 768",
@@ -1413,7 +1589,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW GW A100302",
@@ -1421,7 +1598,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0449",
@@ -1429,7 +1607,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 51756",
@@ -1437,7 +1616,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1829",
@@ -1445,7 +1625,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53228",
@@ -1453,7 +1634,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52022",
@@ -1461,7 +1643,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 25857",
@@ -1469,7 +1652,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52568",
@@ -1477,7 +1661,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 0479",
@@ -1485,7 +1670,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 4352",
@@ -1493,7 +1679,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 26074",
@@ -1501,7 +1688,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKW 3362",
@@ -1509,7 +1697,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 02940",
@@ -1517,7 +1706,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 3599",
@@ -1525,7 +1715,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0950",
@@ -1533,7 +1724,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1671",
@@ -1541,7 +1733,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1517",
@@ -1549,7 +1742,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 1852",
@@ -1557,7 +1751,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 6242",
@@ -1565,7 +1760,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKE 686",
@@ -1573,7 +1769,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1151",
@@ -1581,7 +1778,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 51879",
@@ -1589,7 +1787,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52782",
@@ -1597,7 +1796,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53171",
@@ -1605,7 +1805,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53173",
@@ -1613,7 +1814,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52023",
@@ -1621,7 +1823,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 3230",
@@ -1629,7 +1832,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 1354",
@@ -1637,7 +1841,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 1506",
@@ -1645,7 +1850,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 8067",
@@ -1653,7 +1859,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53172",
@@ -1661,7 +1868,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 9836",
@@ -1669,7 +1877,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 9864",
@@ -1677,7 +1886,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 0951",
@@ -1685,7 +1895,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKY 493",
@@ -1693,7 +1904,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 02934",
@@ -1701,7 +1913,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53347",
@@ -1709,7 +1922,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 4015",
@@ -1717,7 +1931,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53056",
@@ -1725,7 +1940,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 51957",
@@ -1733,7 +1949,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52843",
@@ -1741,7 +1958,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 5554",
@@ -1749,7 +1967,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 3603",
@@ -1757,7 +1976,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "VD 40019 6",
@@ -1765,7 +1985,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW Ki 6009",
@@ -1773,7 +1994,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 53081",
@@ -1781,7 +2003,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 6120",
@@ -1789,7 +2012,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "VD 940 6-1",
@@ -1797,7 +2021,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FE 1975 45",
@@ -1805,7 +2030,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VE 40013 2",
@@ -1813,7 +2039,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FD 1976 40104",
@@ -1821,7 +2048,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FF 1977 4",
@@ -1829,7 +2057,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FF 1976 40005",
@@ -1837,7 +2066,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FD 1976 369",
@@ -1845,7 +2075,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53432",
@@ -1853,7 +2084,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FF 1977 2",
@@ -1861,7 +2093,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKY 325",
@@ -1869,7 +2102,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FD 1977 40122",
@@ -1877,7 +2111,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "GX 40009 3-1",
@@ -1885,7 +2120,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VD 1043 6-1",
@@ -1893,7 +2129,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FV 1978 40004",
@@ -1901,7 +2138,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW GW P100729",
@@ -1909,7 +2147,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FE 1979 40043",
@@ -1917,7 +2156,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52118",
@@ -1925,7 +2165,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FE 1979 100",
@@ -1933,7 +2174,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VD 1064 5-1",
@@ -1941,7 +2183,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "BPN B8009042",
@@ -1949,7 +2192,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53284",
@@ -1957,7 +2201,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 3215",
@@ -1965,7 +2210,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1726",
@@ -1973,7 +2219,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 3332",
@@ -1981,7 +2228,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKP 260",
@@ -1989,7 +2237,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FE 1986 40051",
@@ -1997,7 +2246,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 51934",
@@ -2005,7 +2255,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FA 1981 26",
@@ -2013,7 +2264,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW Ki 8785",
@@ -2021,7 +2273,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 50360",
@@ -2029,7 +2282,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FE 1982 40021",
@@ -2037,7 +2291,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW GW A101336",
@@ -2045,7 +2300,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VC 337 17-1",
@@ -2053,7 +2309,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKY 217",
@@ -2061,7 +2318,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 53174",
@@ -2069,7 +2327,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 13723",
@@ -2077,7 +2336,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FA 1985 49",
@@ -2085,7 +2345,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VD 1655 3-1",
@@ -2093,7 +2354,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 41574",
@@ -2101,7 +2363,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FD 1983 40231",
@@ -2109,7 +2372,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FD 1984 711",
@@ -2117,7 +2381,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 10426",
@@ -2125,7 +2390,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW BJ 52963",
@@ -2133,7 +2399,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FE 1984 40018",
@@ -2141,7 +2408,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 43399",
@@ -2149,7 +2417,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FA 1984 27",
@@ -2157,7 +2426,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5013249",
@@ -2165,7 +2435,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VE 210 4-1",
@@ -2173,7 +2444,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "VD 1701 1-1",
@@ -2181,7 +2453,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "FA 1985 60",
@@ -2189,7 +2462,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FF 1985 40010",
@@ -2197,7 +2471,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FA 1986 82",
@@ -2205,7 +2480,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 53474",
@@ -2213,7 +2489,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "6000772",
@@ -2221,7 +2498,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "FX 1986 19",
@@ -2229,7 +2507,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "6000164",
@@ -2237,7 +2516,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4003594",
@@ -2245,7 +2525,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5017890",
@@ -2253,7 +2534,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1230",
@@ -2261,7 +2543,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2023946",
@@ -2269,7 +2552,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2019055",
@@ -2277,7 +2561,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5012859",
@@ -2285,7 +2570,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3004598",
@@ -2293,7 +2579,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "6000818",
@@ -2301,7 +2588,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3002206",
@@ -2309,7 +2597,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "7000083",
@@ -2317,7 +2606,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52455",
@@ -2325,7 +2615,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5025648",
@@ -2333,7 +2624,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 0354",
@@ -2341,7 +2633,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2022446",
@@ -2349,7 +2642,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 52253",
@@ -2357,7 +2651,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4162374",
@@ -2365,7 +2660,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5026200",
@@ -2373,7 +2669,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 0885",
@@ -2381,7 +2678,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 9711",
@@ -2389,7 +2687,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2037232",
@@ -2397,7 +2696,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 35398",
@@ -2405,7 +2705,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2065741",
@@ -2413,7 +2714,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2038432",
@@ -2421,7 +2723,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4037724",
@@ -2429,7 +2732,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5039233",
@@ -2437,7 +2741,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2045328",
@@ -2445,7 +2750,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2042875",
@@ -2453,7 +2759,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "1009617",
@@ -2461,7 +2768,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5041205",
@@ -2469,7 +2777,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "1011407",
@@ -2477,7 +2786,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4041098",
@@ -2485,7 +2795,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2051851",
@@ -2493,7 +2804,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 16446",
@@ -2501,7 +2813,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5046128",
@@ -2509,7 +2822,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5046742",
@@ -2517,7 +2831,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW BJ 42421",
@@ -2525,7 +2840,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKE 123",
@@ -2533,7 +2849,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 0593",
@@ -2541,7 +2858,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 1999",
@@ -2549,7 +2867,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5050097",
@@ -2557,7 +2876,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0740",
@@ -2565,7 +2885,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2071740",
@@ -2573,7 +2894,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1281",
@@ -2581,7 +2903,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKY 629",
@@ -2589,7 +2912,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5061329",
@@ -2597,7 +2921,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2076937",
@@ -2605,7 +2930,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2084022",
@@ -2613,7 +2939,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5062699",
@@ -2621,7 +2948,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4064202",
@@ -2629,7 +2957,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5069593",
@@ -2637,7 +2966,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4094390",
@@ -2645,7 +2975,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4097271",
@@ -2653,7 +2984,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4086683",
@@ -2661,7 +2993,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5086710",
@@ -2669,7 +3002,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5088279",
@@ -2677,7 +3011,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2128844",
@@ -2685,7 +3020,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2124467",
@@ -2693,7 +3029,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4094953",
@@ -2701,7 +3038,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5086725",
@@ -2709,7 +3047,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 5151",
@@ -2717,7 +3056,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4113288",
@@ -2725,7 +3065,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4153877",
@@ -2733,7 +3074,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5125806",
@@ -2741,7 +3083,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4121221",
@@ -2749,7 +3092,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5133031",
@@ -2757,7 +3101,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 7548",
@@ -2765,7 +3110,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4139945",
@@ -2773,7 +3119,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4136359",
@@ -2781,7 +3128,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 6247",
@@ -2789,7 +3137,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4153875",
@@ -2797,7 +3146,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5146977",
@@ -2805,7 +3155,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 8464",
@@ -2813,7 +3164,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 5265",
@@ -2821,7 +3173,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKP 674",
@@ -2829,7 +3182,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 9023",
@@ -2837,7 +3191,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5160658",
@@ -2845,7 +3200,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "1028342",
@@ -2853,7 +3209,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2267819",
@@ -2861,7 +3218,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5160520",
@@ -2869,7 +3227,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2265002",
@@ -2877,7 +3236,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4184935",
@@ -2885,7 +3245,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5194483",
@@ -2893,7 +3254,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 0595",
@@ -2901,7 +3263,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5169557",
@@ -2909,7 +3272,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2227389",
@@ -2917,7 +3281,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 9510",
@@ -2925,7 +3290,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1206",
@@ -2933,7 +3299,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKR 9061",
@@ -2941,7 +3308,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4204161",
@@ -2949,7 +3317,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5185892",
@@ -2957,7 +3326,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 0266",
@@ -2965,7 +3335,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4199737",
@@ -2973,7 +3344,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5186753",
@@ -2981,7 +3353,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4207729",
@@ -2989,7 +3362,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKR 5390",
@@ -2997,7 +3371,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4212901",
@@ -3005,7 +3380,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1210",
@@ -3013,7 +3389,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5201886",
@@ -3021,7 +3398,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3013533",
@@ -3029,7 +3407,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3014574",
@@ -3037,7 +3416,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5212462",
@@ -3045,7 +3425,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3007625",
@@ -3053,7 +3434,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "3010628",
@@ -3061,7 +3443,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1862",
@@ -3069,7 +3452,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5229033",
@@ -3077,7 +3461,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4227076",
@@ -3085,7 +3470,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW GW P100009",
@@ -3093,7 +3479,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4229105",
@@ -3101,7 +3488,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5230610",
@@ -3109,7 +3497,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4248580",
@@ -3117,7 +3506,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5235107",
@@ -3125,7 +3515,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5237627",
@@ -3133,7 +3524,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW P100008",
@@ -3141,7 +3533,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5251998",
@@ -3149,7 +3542,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5244567",
@@ -3157,7 +3551,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW XKZ 1033",
@@ -3165,7 +3560,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4262750",
@@ -3173,7 +3569,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "2267570",
@@ -3181,7 +3578,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4262746",
@@ -3189,7 +3587,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5256114",
@@ -3197,7 +3596,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5272290",
@@ -3205,7 +3605,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4269562",
@@ -3213,7 +3614,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5253377",
@@ -3221,7 +3623,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2312538",
@@ -3229,7 +3632,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "2306241",
@@ -3237,7 +3641,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5263101",
@@ -3245,7 +3650,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4293570",
@@ -3253,7 +3659,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5271539",
@@ -3261,7 +3668,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4279118",
@@ -3269,7 +3677,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "12006526",
@@ -3277,7 +3686,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4280586",
@@ -3285,7 +3695,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5276973",
@@ -3293,7 +3704,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKW 2737",
@@ -3301,7 +3713,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5293912",
@@ -3309,7 +3722,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5273704",
@@ -3317,7 +3731,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5277162",
@@ -3325,7 +3740,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5286008",
@@ -3333,7 +3749,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "KW XKZ 1713",
@@ -3341,7 +3758,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "5280348",
@@ -3349,7 +3767,8 @@
         "definite": {
             "Red Riding Hood": 1,
             "wolf": 0
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "4290642",
@@ -3357,7 +3776,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "5272036",
@@ -3365,7 +3785,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "4311131",
@@ -3373,7 +3794,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "14029101",
@@ -3381,7 +3803,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "KW GW A101524",
@@ -3389,7 +3812,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "14013747",
@@ -3397,7 +3821,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     },
     {
         "id": "14036517",
@@ -3405,7 +3830,8 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 1
     },
     {
         "id": "14027694",
@@ -3413,6 +3839,7 @@
         "definite": {
             "Red Riding Hood": 0,
             "wolf": 1
-        }
+        },
+        "classical opening": 0
     }
 ]
