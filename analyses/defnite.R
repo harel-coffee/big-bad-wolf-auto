@@ -2,23 +2,25 @@ library(arm)
 library(brms)
 require(gridExtra)
 
-df = read.csv("defnite.csv")
+df <- read.csv("defnite.csv")
 head(df)
 
 ## Compute simple Generalized Linear models
-lr.wolf <- glm(wolf ~ timebin + rrh + opening, data=df, family="binomial")
-summary(lr.wolf)
+lr_wolf <- glm(wolf ~ timebin + rrh + opening, data = df, family = "binomial")
+summary(lr_wolf)
 
 # This can't be done, because of quasi-separation problems (cf. the errors)
-lr.rrh <- glm(rrh ~ timebin + wolf + opening, data=df, family="binomial")
-summary(lr.rrh)
+lr_rrh <- glm(rrh ~ timebin + wolf + opening, data = df, family = "binomial")
+summary(lr_rrh)
 
 ## Compute Bayes Generalized Linear Models according to Gelman et al.
-blr.wolf <- bayesglm(wolf ~ timebin + rrh + opening, data=df, family="binomial")
-display(blr.wolf)
+blr_wolf <- bayesglm(wolf ~ timebin + rrh + opening,
+                     data = df, family = "binomial")
+display(blr_wolf)
 
-blr.rrh <- bayesglm(rrh ~ timebin + wolf + opening, data=df, family="binomial")
-display(blr.rrh)
+blr_rrh <- bayesglm(rrh ~ timebin + wolf + opening,
+                    data = df, family = "binomial")
+display(blr_rrh)
 
 # While Gelman's analysis using an EM optimalization overcomes the problem of 
 # regular GLMs for quasi separation, it doesn't allow us to check for certain 
@@ -30,22 +32,22 @@ display(blr.rrh)
 # a a prior, or we could use distributions with heavier tails (do deal with potential
 # outliers), such as the Student t distribution. Being on the uninformed side, 
 # we'll use a unit student-t prior with 10 degrees of freedom for both models.
-brm.wolf <- brm(wolf ~ timebin + rrh + opening, data=df, 
-                prior=c(set_prior("student_t(10,0,1)", class="b")), 
-                family="bernoulli", iter=10000)
-summary(brm.wolf)
-plot(brm.wolf)
+brm_wolf <- brm(wolf ~ timebin + rrh + opening, data = df,
+                prior = c(set_prior("student_t(10,0,1)", class = "b")),
+                family = "bernoulli", iter = 10000)
+summary(brm_wolf)
+plot(brm_wolf)
 
 # Compute proportion of samples against hypotheses
 # For example, what is the propbability that opening has no positive effect?
-mean(posterior_samples(brm.wolf, "opening") < 0)
-hypothesis(brm.wolf, "opening < 0") # alternatively
+mean(posterior_samples(brm_wolf, "opening") < 0)
+hypothesis(brm_wolf, "opening < 0") # alternatively
 # Next, what is the probability that timebin has no positive effect?
-mean(posterior_samples(brm.wolf, "timebin") <= 0)
-hypothesis(brm.wolf, "timebin < 0") # alternatively
+mean(posterior_samples(brm_wolf, "timebin") < 0)
+hypothesis(brm_wolf, "timebin < 0") # alternatively
 # And finally, what is the probability that the definiteness of RRH has no effect?
-mean(posterior_samples(brm.wolf, "rrh") <= 0)
-hypothesis(brm.wolf, "rrh < 0") # alternatively
+mean(posterior_samples(brm_wolf, "rrh") < 0)
+hypothesis(brm_wolf, "rrh < 0") # alternatively
 
 # From: https://www.r-bloggers.com/diffusion-wiener-model-analysis-with-brms-part-iii-hypothesis-tests-of-parameter-estimates/
 # Thus, the resulting value is a probability (i.e., ranging from 0 to 1), 
@@ -60,39 +62,39 @@ hypothesis(brm.wolf, "rrh < 0") # alternatively
 # accuracy conditions in drift rate across word and non-word stimuli 
 # is .13, indicating that the evidence for a difference is at best weak. 
 
-wolf.me.time <- marginal_effects(brm.wolf, "timebin")
-wolf.me.opening <- marginal_effects(brm.wolf, "opening")
-wolf.me.rrh <- marginal_effects(brm.wolf, "rrh")
+wolf_me_time <- marginal_effects(brm_wolf, "timebin")
+wolf_me_opening <- marginal_effects(brm_wolf, "opening")
+wolf_me_rrh <- marginal_effects(brm_wolf, "rrh")
 
-grid.arrange(plot(wolf.me.time)[[1]] + ggplot2::ylim(0,1),
-             plot(wolf.me.opening)[[1]] + ggplot2::ylim(0,1),
-             plot(wolf.me.rrh)[[1]] + ggplot2::ylim(0,1),
-             ncol=3)
+grid.arrange(plot(wolf_me_time)[[1]] + ggplot2::ylim(0, 1),
+             plot(wolf_me_opening)[[1]] + ggplot2::ylim(0, 1),
+             plot(wolf_me_rrh)[[1]] + ggplot2::ylim(0, 1),
+             ncol = 3)
 
 
-brm.rrh <- brm(rrh ~ timebin + wolf + opening, data=df, 
-               prior=c(set_prior("student_t(10,0,1)", class="b")), 
-               family="bernoulli", iter=10000)
-summary(brm.rrh)
-plot(brm.rrh)
+brm_rrh <- brm(rrh ~ timebin + wolf + opening, data = df,
+               prior = c(set_prior("student_t(10,0,1)", class = "b")),
+               family = "bernoulli", iter = 10000)
+summary(brm_rrh)
+plot(brm_rrh)
 
 # Compute proportion of samples against hypotheses
 # For example, what is the propbability that opening has no positive effect?
-mean(posterior_samples(brm.rrh, "opening") <= 0)
-hypothesis(brm.rrh, "opening < 0") # alternatively
+mean(posterior_samples(brm_rrh, "opening") < 0)
+hypothesis(brm_rrh, "opening < 0") # alternatively
 # Next, what is the probability that timebin has no positive effect?
-mean(posterior_samples(brm.rrh, "timebin") <= 0)
-hypothesis(brm.rrh, "timebin < 0") # alternatively
+mean(posterior_samples(brm_rrh, "timebin") < 0)
+hypothesis(brm_rrh, "timebin < 0") # alternatively
 # And finally, what is the probability that the definiteness of RRH has no effect?
-mean(posterior_samples(brm.rrh, "wolf") <= 0)
-hypothesis(brm.rrh, "wolf < 0") # alternatively
+mean(posterior_samples(brm_rrh, "wolf") < 0)
+hypothesis(brm_rrh, "wolf < 0") # alternatively
 
 
-rrh.me.time <- marginal_effects(brm.rrh, "timebin")
-rrh.me.opening <- marginal_effects(brm.rrh, "opening")
-rrh.me.wolf <- marginal_effects(brm.rrh, "wolf")
+rrh_me_time <- marginal_effects(brm_rrh, "timebin")
+rrh_me_opening <- marginal_effects(brm_rrh, "opening")
+rrh_me_wolf <- marginal_effects(brm_rrh, "wolf")
 
-grid.arrange(plot(rrh.me.time)[[1]] + ggplot2::ylim(0,1),
-             plot(rrh.me.opening)[[1]] + ggplot2::ylim(0,1),
-             plot(rrh.me.wolf)[[1]] + ggplot2::ylim(0,1),
-             ncol=3)
+grid.arrange(plot(rrh_me_time)[[1]] + ggplot2::ylim(0, 1),
+             plot(rrh_me_opening)[[1]] + ggplot2::ylim(0, 1),
+             plot(rrh_me_wolf)[[1]] + ggplot2::ylim(0, 1),
+             ncol = 3)
