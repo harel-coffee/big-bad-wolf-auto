@@ -1,5 +1,6 @@
 library(arm)
 library(brms)
+require(gridExtra)
 
 df = read.csv("defnite.csv")
 head(df)
@@ -34,11 +35,64 @@ brm.wolf <- brm(wolf ~ timebin + rrh + opening, data=df,
                 family="bernoulli", iter=10000)
 summary(brm.wolf)
 plot(brm.wolf)
-marginal_effects(brm.wolf)
+
+# Compute proportion of samples against hypotheses
+# For example, what is the propbability that opening has no positive effect?
+mean(posterior_samples(brm.wolf, "opening") < 0)
+hypothesis(brm.wolf, "opening < 0") # alternatively
+# Next, what is the probability that timebin has no positive effect?
+mean(posterior_samples(brm.wolf, "timebin") <= 0)
+hypothesis(brm.wolf, "timebin < 0") # alternatively
+# And finally, what is the probability that the definiteness of RRH has no effect?
+mean(posterior_samples(brm.wolf, "rrh") <= 0)
+hypothesis(brm.wolf, "rrh < 0") # alternatively
+
+# From: https://www.r-bloggers.com/diffusion-wiener-model-analysis-with-brms-part-iii-hypothesis-tests-of-parameter-estimates/
+# Thus, the resulting value is a probability (i.e., ranging from 0 to 1), 
+# with values near zero denoting evidence for a difference, and values 
+# near one provide some evidence against a difference. Thus, in contrast 
+# to a classical p-value it is a continuous measure of evidence for (when
+#  near 0) or against (when near 1) a difference between the parameter 
+# estimates. Given its superficial similarity with classical p-values 
+# (i.e., low values are seen as evidence for a difference), we could call 
+# this it a version of a Bayesian p-value or pB for short. In the present 
+# case we could say: The pB value for a difference between speed and 
+# accuracy conditions in drift rate across word and non-word stimuli 
+# is .13, indicating that the evidence for a difference is at best weak. 
+
+wolf.me.time <- marginal_effects(brm.wolf, "timebin")
+wolf.me.opening <- marginal_effects(brm.wolf, "opening")
+wolf.me.rrh <- marginal_effects(brm.wolf, "rrh")
+
+grid.arrange(plot(wolf.me.time)[[1]] + ggplot2::ylim(0,1),
+             plot(wolf.me.opening)[[1]] + ggplot2::ylim(0,1),
+             plot(wolf.me.rrh)[[1]] + ggplot2::ylim(0,1),
+             ncol=3)
+
 
 brm.rrh <- brm(rrh ~ timebin + wolf + opening, data=df, 
                prior=c(set_prior("student_t(10,0,1)", class="b")), 
                family="bernoulli", iter=10000)
 summary(brm.rrh)
 plot(brm.rrh)
-marginal_effects(brm.rrh)
+
+# Compute proportion of samples against hypotheses
+# For example, what is the propbability that opening has no positive effect?
+mean(posterior_samples(brm.rrh, "opening") <= 0)
+hypothesis(brm.rrh, "opening < 0") # alternatively
+# Next, what is the probability that timebin has no positive effect?
+mean(posterior_samples(brm.rrh, "timebin") <= 0)
+hypothesis(brm.rrh, "timebin < 0") # alternatively
+# And finally, what is the probability that the definiteness of RRH has no effect?
+mean(posterior_samples(brm.rrh, "wolf") <= 0)
+hypothesis(brm.rrh, "wolf < 0") # alternatively
+
+
+rrh.me.time <- marginal_effects(brm.rrh, "timebin")
+rrh.me.opening <- marginal_effects(brm.rrh, "opening")
+rrh.me.wolf <- marginal_effects(brm.rrh, "wolf")
+
+grid.arrange(plot(rrh.me.time)[[1]] + ggplot2::ylim(0,1),
+             plot(rrh.me.opening)[[1]] + ggplot2::ylim(0,1),
+             plot(rrh.me.wolf)[[1]] + ggplot2::ylim(0,1),
+             ncol=3)
