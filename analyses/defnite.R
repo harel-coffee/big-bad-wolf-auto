@@ -1,6 +1,8 @@
 library(arm)
 library(brms)
 require(gridExtra)
+library(scales)
+
 
 df <- read.csv("defnite.csv")
 head(df)
@@ -31,7 +33,8 @@ display(blr_rrh)
 # As such a normal distribution with a relatively large scale would be appropriate
 # a a prior, or we could use distributions with heavier tails (do deal with potential
 # outliers), such as the Student t distribution. Being on the uninformed side, 
-# we'll use a unit student-t prior with 10 degrees of freedom for both models.
+# we'll use a weakly-informative prior in the form of a unit student-t prior with 
+# 10 degrees of freedom for both models.
 brm_wolf <- brm(wolf ~ timebin + rrh + opening, data = df,
                 prior = c(set_prior("student_t(10,0,1)", class = "b")),
                 family = "bernoulli", iter = 10000)
@@ -71,7 +74,6 @@ grid.arrange(plot(wolf_me_time)[[1]] + ggplot2::ylim(0, 1),
              plot(wolf_me_rrh)[[1]] + ggplot2::ylim(0, 1),
              ncol = 3)
 
-
 brm_rrh <- brm(rrh ~ timebin + wolf + opening, data = df,
                prior = c(set_prior("student_t(10,0,1)", class = "b")),
                family = "bernoulli", iter = 10000)
@@ -98,3 +100,26 @@ grid.arrange(plot(rrh_me_time)[[1]] + ggplot2::ylim(0, 1),
              plot(rrh_me_opening)[[1]] + ggplot2::ylim(0, 1),
              plot(rrh_me_wolf)[[1]] + ggplot2::ylim(0, 1),
              ncol = 3)
+
+## Analysis of the effect of time on the presence of formulaic openings
+
+brm_opening <- brm(opening ~ timebin, data = df,
+                   prior = c(set_prior("student_t(10, 0, 1)", class = "b")),
+                   family = "bernoulli", iter = 10000)
+summary(brm_opening)
+plot(brm_opening)
+
+mean(posterior_samples(brm_opening, "timebin") < 0)
+hypothesis(brm_opening, "timebin < 0")
+
+plot(marginal_effects(brm_opening, "timebin"))[[1]] +
+    scale_x_discrete(
+        name ="Time period", 
+        limits = c("1800-1850","1850-1900","1900-1950","1950-2000")) +
+    scale_y_continuous(
+        name = "Probability of formulaic opening",
+        labels = percent,
+        limits = c(0, 1)) + 
+    theme_bw()
+
+exp(quantile(as.matrix(brm_opening)[,2], probs=c(.5, .025, .975)))
