@@ -5,22 +5,25 @@ library(scales)
 
 
 df <- read.csv("defnite.csv")
+df$rrh = as.factor(df$rrh)
+df$wolf = as.factor(df$wolf)
+df$opening = as.factor(df$opening)
 head(df)
 
 ## Compute simple Generalized Linear models
-lr_wolf <- glm(wolf ~ timebin + rrh + opening, data = df, family = "binomial")
+lr_wolf <- glm(wolf ~ timebin, data = df, family = "binomial")
 summary(lr_wolf)
 
 # This can't be done, because of quasi-separation problems (cf. the errors)
-lr_rrh <- glm(rrh ~ timebin + wolf + opening, data = df, family = "binomial")
+lr_rrh <- glm(rrh ~ timebin + opening,  data = df, family = "binomial")
 summary(lr_rrh)
 
 ## Compute Bayes Generalized Linear Models according to Gelman et al.
-blr_wolf <- bayesglm(wolf ~ timebin + rrh + opening,
+blr_wolf <- bayesglm(wolf ~ timebin,
                      data = df, family = "binomial")
 display(blr_wolf)
 
-blr_rrh <- bayesglm(rrh ~ timebin + wolf + opening,
+blr_rrh <- bayesglm(rrh ~ timebin,
                     data = df, family = "binomial")
 display(blr_rrh)
 
@@ -35,22 +38,15 @@ display(blr_rrh)
 # outliers), such as the Student t distribution. Being on the uninformed side, 
 # we'll use a weakly-informative prior in the form of a unit student-t prior with 
 # 10 degrees of freedom for both models.
-brm_wolf <- brm(wolf ~ timebin + rrh + opening, data = df,
+brm_wolf <- brm(wolf ~ timebin, data = df,
                 prior = c(set_prior("student_t(10,0,1)", class = "b")),
                 family = "bernoulli", iter = 10000)
 summary(brm_wolf)
 plot(brm_wolf)
 
-# Compute proportion of samples against hypotheses
-# For example, what is the propbability that opening has no positive effect?
-mean(posterior_samples(brm_wolf, "opening") < 0)
-hypothesis(brm_wolf, "opening < 0") # alternatively
 # Next, what is the probability that timebin has no positive effect?
 mean(posterior_samples(brm_wolf, "timebin") < 0)
-hypothesis(brm_wolf, "timebin < 0") # alternatively
-# And finally, what is the probability that the definiteness of RRH has no effect?
-mean(posterior_samples(brm_wolf, "rrh") < 0)
-hypothesis(brm_wolf, "rrh < 0") # alternatively
+hypothesis(brm_wolf, "timebin = 0") # alternatively
 
 # From: https://www.r-bloggers.com/diffusion-wiener-model-analysis-with-brms-part-iii-hypothesis-tests-of-parameter-estimates/
 # Thus, the resulting value is a probability (i.e., ranging from 0 to 1), 
@@ -65,41 +61,20 @@ hypothesis(brm_wolf, "rrh < 0") # alternatively
 # accuracy conditions in drift rate across word and non-word stimuli 
 # is .13, indicating that the evidence for a difference is at best weak. 
 
-wolf_me_time <- marginal_effects(brm_wolf, "timebin")
-wolf_me_opening <- marginal_effects(brm_wolf, "opening")
-wolf_me_rrh <- marginal_effects(brm_wolf, "rrh")
+plot(marginal_effects(brm_wolf, "timebin"))
 
-grid.arrange(plot(wolf_me_time)[[1]] + ggplot2::ylim(0, 1),
-             plot(wolf_me_opening)[[1]] + ggplot2::ylim(0, 1),
-             plot(wolf_me_rrh)[[1]] + ggplot2::ylim(0, 1),
-             ncol = 3)
-
-brm_rrh <- brm(rrh ~ timebin + wolf + opening, data = df,
-               prior = c(set_prior("student_t(10,0,1)", class = "b")),
+brm_rrh <- brm(rrh ~ timebin, data = df,
+               prior = c(set_prior("student_t(10, 0, 1)", class = "b")),
                family = "bernoulli", iter = 10000)
 summary(brm_rrh)
 plot(brm_rrh)
 
-# Compute proportion of samples against hypotheses
-# For example, what is the propbability that opening has no positive effect?
-mean(posterior_samples(brm_rrh, "opening") < 0)
-hypothesis(brm_rrh, "opening < 0") # alternatively
 # Next, what is the probability that timebin has no positive effect?
 mean(posterior_samples(brm_rrh, "timebin") < 0)
 hypothesis(brm_rrh, "timebin < 0") # alternatively
 # And finally, what is the probability that the definiteness of RRH has no effect?
-mean(posterior_samples(brm_rrh, "wolf") < 0)
-hypothesis(brm_rrh, "wolf < 0") # alternatively
 
-
-rrh_me_time <- marginal_effects(brm_rrh, "timebin")
-rrh_me_opening <- marginal_effects(brm_rrh, "opening")
-rrh_me_wolf <- marginal_effects(brm_rrh, "wolf")
-
-grid.arrange(plot(rrh_me_time)[[1]] + ggplot2::ylim(0, 1),
-             plot(rrh_me_opening)[[1]] + ggplot2::ylim(0, 1),
-             plot(rrh_me_wolf)[[1]] + ggplot2::ylim(0, 1),
-             ncol = 3)
+plot(marginal_effects(brm_rrh, "timebin"))
 
 ## Analysis of the effect of time on the presence of formulaic openings
 
@@ -123,3 +98,14 @@ plot(marginal_effects(brm_opening, "timebin"))[[1]] +
     theme_bw()
 
 exp(quantile(as.matrix(brm_opening)[,2], probs=c(.5, .025, .975)))
+
+
+## interaction
+
+brm_rrh_opening <- brm(rrh ~ timebin * opening, data = df,
+               prior = c(set_prior("student_t(10, 0, 1)", class = "b")),
+               family = "bernoulli", iter = 10000)
+summary(brm_rrh_opening)
+plot(brm_rrh_opening)
+
+## Bayes model comparison rrh|tijd - rrh|tijd*opening 
