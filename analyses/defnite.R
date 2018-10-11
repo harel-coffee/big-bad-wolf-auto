@@ -7,7 +7,7 @@ library(tidybayes)
 library(cowplot)
 library(OneR)
 
-
+                                        # 5, 1820
 df <- read.csv("defnite.csv")
 df <- df[df$year >= 1820,]
 df$rrh = as.factor(df$rrh)
