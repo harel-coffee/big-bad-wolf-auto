@@ -18,6 +18,7 @@ parser.add_argument('--dataset', type=str)
 args = parser.parse_args()
 
 df = pd.read_csv(args.dataset)
+df = df[df['reprint'] == 'no']
 
 stories, ns = {}, {'tei': 'http://www.tei-c.org/ns/1.0'}
 for entry in os.scandir(args.corpus):
@@ -40,8 +41,8 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.1, shuffle=True, random_state=1983)
 
 tpot = TPOTRegressor(generations=100, population_size=100, verbosity=2,
-                     config_dict='TPOT sparse', scoring='neg_mean_squared_error',
-                     njobs=40, scoring='r2', periodic_checkpoint_folder='tpot')
+                     config_dict='TPOT sparse', njobs=40, scoring='r2',
+                     periodic_checkpoint_folder='tpot')
 tpot.fit(X_train, y_train)
 print(tpot.score(X_test, y_test))
 tpot.export('tpot_datereg.py')
