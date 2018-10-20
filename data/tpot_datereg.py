@@ -33,7 +33,7 @@ unknowns, unkdates = zip(*df[~df['exact_date']][['id', 'year_corrected']].values
 
 vectorizer = FeatureUnion([
     ('raw_chars', TfidfVectorizer(analyzer='char', ngram_range=(1, 4),
-                                  lowercase=False, use_idf=True, min_df=2)),
+                                  lowercase=False, min_df=2)),
     ('clean_chars', TfidfVectorizer(analyzer='char', ngram_range=(1, 4), min_df=2)),
     ('puctuation', TfidfVectorizer(analyzer='word',  use_idf=False,
                                    token_pattern=r'[^\w\s]+')),
@@ -46,9 +46,9 @@ y = np.array(dates)
 scaler = RobustScaler()
 y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
-tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=10,
+tpot = TPOTRegressor(generations=500, population_size=100, verbosity=3, cv=10,
                      config_dict=regressor_config_sparse, n_jobs=30,
-                     scoring='neg_mean_absolute_error',
+                     scoring='r2',
                      periodic_checkpoint_folder='tpot')
 tpot.fit(X, y)
 tpot.export('tpot_datereg_pipeline.py')
