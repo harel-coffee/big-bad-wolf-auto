@@ -34,36 +34,28 @@ regressor_config_sparse = {
         }
     },
 
-    'sklearn.compose.TransformedTargetRegressor': {
-        'transformer': {
-            'sklearn.preprocessing.RobustScaler': None,
-            'sklearn.preprocessing.StandardScaler': None,
-            'sklearn.preprocessing.MinMaxScaler': None
-        }
-        'regressor': {
-            'sklearn.linear_model.ElasticNetCV': {
-                'l1_ratio': np.arange(0.0, 1.01, 0.05),
-                'tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1]
-            },
+    'sklearn.linear_model.ElasticNetCV': {
+        'l1_ratio': np.arange(0.0, 1.01, 0.05),
+        'tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1]
+    },
 
-            'sklearn.linear_model.RidgeCV': {
-            },
+    'sklearn.linear_model.RidgeCV': {
+    },
 
-            'sklearn.svm.LinearSVR': {
-                'loss': ["epsilon_insensitive", "squared_epsilon_insensitive"],
-                'dual': [True, False],
-                'tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1],
-                'C': [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1., 5., 10., 15., 20., 25.],
-                'epsilon': [1e-4, 1e-3, 1e-2, 1e-1, 1.]
-            },
+    'sklearn.svm.LinearSVR': {
+        'loss': ["epsilon_insensitive", "squared_epsilon_insensitive"],
+        'dual': [True, False],
+        'tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1],
+        'C': [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1., 5., 10., 15., 20., 25.],
+        'epsilon': [1e-4, 1e-3, 1e-2, 1e-1, 1.]
+    },
 
-            'xgboost.XGBRegressor': {
-                'n_estimators': [100],
-                'max_depth': range(1, 11),
-                'learning_rate': [1e-3, 1e-2, 1e-1, 0.5, 1.],
-                'subsample': np.arange(0.05, 1.01, 0.05),
-                'min_child_weight': range(1, 21),
-                'nthread': [1]
-            }
-        }}
+    'xgboost.XGBRegressor': {
+        'n_estimators': [100],
+        'max_depth': range(1, 11),
+        'learning_rate': [1e-3, 1e-2, 1e-1, 0.5, 1.],
+        'subsample': np.arange(0.05, 1.01, 0.05),
+        'min_child_weight': range(1, 21),
+        'nthread': [1]
+    }
 }
