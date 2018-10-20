@@ -47,4 +47,4 @@ tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=10,
                      config_dict=tpot_config, njobs=30, scoring='neg_mean_absolute_error',
                      periodic_checkpoint_folder='tpot')
 tpot.fit(X, y)
-tpot.export('tpot_datereg.py')
+tpot.export('tpot_datereg_pipeline.py')
