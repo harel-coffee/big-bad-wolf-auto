@@ -21,6 +21,7 @@ from sklearn.utils import shuffle
 parser = argparse.ArgumentParser()
 parser.add_argument('--corpus', type=str)
 parser.add_argument('--dataset', type=str)
+parser.add_argument('--n_jobs', type=int, default=1)
 args = parser.parse_args()
 
 df = pd.read_csv(args.dataset)
@@ -66,7 +67,7 @@ grid = {
 
 grid_cv = GridSearchCV(
     pipeline, grid, scoring=['r2', 'neg_mean_absolute_error'],
-    refit='r2', cv=10, n_jobs=4, verbose=1, error_score=0.0)
+    refit='r2', cv=10, n_jobs=args.n_jobs, verbose=1, error_score=0.0)
 
 grid_cv.fit(X_train, y_train)
 results = pd.DataFrame(grid_cv.cv_results_)
