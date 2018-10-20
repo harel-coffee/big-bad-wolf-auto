@@ -46,7 +46,7 @@ y = np.array(dates)
 scaler = RobustScaler()
 y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
-tpot = TPOTRegressor(generations=500, population_size=100, verbosity=3, cv=10,
+tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=10,
                      config_dict=regressor_config_sparse, n_jobs=30,
                      scoring='r2',
                      periodic_checkpoint_folder='tpot')
