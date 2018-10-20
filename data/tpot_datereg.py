@@ -8,8 +8,9 @@ import pandas as pd
 from tpot import TPOTRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import FeatureUnion
+from sklearn.preprocessing import RobustScaler
 
-from tpot_config import tpot_config
+from tpot_config import regressor_config_sparse
 
 
 parser = argparse.ArgumentParser()
@@ -42,9 +43,12 @@ vectorizer.fit(stories.values())
 X = [stories[id] for id in knowns]
 X = vectorizer.transform(X)
 y = np.array(dates)
+scaler = RobustScaler()
+y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
 tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=10,
-                     config_dict=tpot_config, njobs=30, scoring='neg_mean_absolute_error',
+                     config_dict=regressor_config_sparse, n_jobs=30,
+                     scoring='neg_mean_absolute_error',
                      periodic_checkpoint_folder='tpot')
 tpot.fit(X, y)
 tpot.export('tpot_datereg_pipeline.py')
