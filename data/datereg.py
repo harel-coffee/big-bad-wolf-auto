@@ -12,7 +12,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline, FeatureUnion
 from sklearn.svm import LinearSVR
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, QuantileTransformer, RobustScaler
+from sklearn.preprocessing import RobustScaler
 
 
 parser = argparse.ArgumentParser()
