@@ -55,7 +55,7 @@ grid = {
     'vec__use_idf': [True, False],
     'vec__lowercase': [True, False],
     'tt_svr__regressor__alpha': np.linspace(0.0001, 0.1, 10),
-    'tt_scr__regressor__tol': [1e-2, 1e-3, 1e-4]
+    'tt_svr__regressor__tol': [1e-2, 1e-3, 1e-4]
 }
 
 grid_cv = GridSearchCV(
