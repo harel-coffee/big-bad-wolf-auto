@@ -9,13 +9,11 @@ import pandas as pd
 
 from sklearn.compose import TransformedTargetRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_selection import SelectPercentile, f_regression
+from sklearn.linear_model import Ridge
 from sklearn.metrics import r2_score, mean_absolute_error
 from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import RobustScaler
-from sklearn.svm import LinearSVR
-from sklearn.utils import shuffle
 
 
 parser = argparse.ArgumentParser()
@@ -43,37 +41,31 @@ y = np.array(dates)
 X_train, X_test, y_train, y_test, id_train, id_test = train_test_split(
     X, y, knowns, test_size=0.1, shuffle=True, random_state=1983)
 
-vectorizer = FeatureUnion([
-        ('raw_chars', TfidfVectorizer(analyzer='char', ngram_range=(1, 4),
-                                      lowercase=False, use_idf=True, min_df=2)),
-        ('clean_chars', TfidfVectorizer(analyzer='char', ngram_range=(1, 4), min_df=2)),
-        ('puctuation', TfidfVectorizer(analyzer='word',  use_idf=False,
-                                       token_pattern=r'[^\w\s]+'))])
-
-X_train = vectorizer.fit_transform(X_train)
-
 pipeline = Pipeline([
-    ('tt_svr', TransformedTargetRegressor(regressor=LinearSVR(),
-                                          transformer=RobustScaler()))
+    ('vec', TfidfVectorizer()),
+    ('tt_svr', TransformedTargetRegressor(
+        regressor=Ridge(), transformer=RobustScaler()))
 ])
 
 grid = {
-    'tt_svr__regressor__loss': ["epsilon_insensitive", "squared_epsilon_insensitive"],
-    'tt_svr__regressor__dual': [True, False],
-    'tt_svr__regressor__tol': [1e-5, 1e-4, 1e-3, 1e-2, 1e-1],
-    'tt_svr__regressor__C': [1e-4, 1e-3, 1e-2, 1e-1, 0.5, 1., 5., 10., 15., 20., 25.],
-    'tt_svr__regressor__epsilon': [1e-4, 1e-3, 1e-2, 1e-1, 1.]
+    'vec__analyzer': ['char'],
+    'vec__ngram_range': [(1, 3), (1, 4), (2, 3), (2, 4)],
+    'vec__min_df': [1, 2, 5, 10, 20, 50],
+    'vec__max_df': [1.0, 0.9, 0.8, 0.7],
+    'vec__use_idf': [True, False],
+    'vec__lowercase': [True, False],
+    'tt_svr__regressor__alpha': np.linspace(0.0001, 0.1, 10),
+    'tt_scr__regressor__tol': [1e-2, 1e-3, 1e-4]
 }
 
 grid_cv = GridSearchCV(
     pipeline, grid, scoring=['r2', 'neg_mean_absolute_error'],
-    refit='r2', cv=10, n_jobs=args.n_jobs, verbose=1, error_score=0.0)
+    refit='r2', cv=10, n_jobs=args.n_jobs, verbose=1, error_score=np.nan)
 
 grid_cv.fit(X_train, y_train)
 results = pd.DataFrame(grid_cv.cv_results_)
-results.to_csv("results-svr.csv")
+results.to_csv("results-ridge.csv")
 
-X_test = vectorizer.transform(X_test)
 test_pred = grid_cv.predict(X_test)
 
 abs_error = np.abs(y_test - test_pred)
