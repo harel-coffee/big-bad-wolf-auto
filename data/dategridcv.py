@@ -49,13 +49,11 @@ pipeline = Pipeline([
 
 grid = {
     'vec__analyzer': ['char'],
-    'vec__ngram_range': [(1, 3), (1, 4), (2, 3), (2, 4)],
-    'vec__min_df': [1, 2, 5, 10, 20, 50],
+    'vec__ngram_range': [(1, 4), (2, 4), (2, 5)],
+    'vec__min_df': [5, 10, 20],
     'vec__max_df': [1.0, 0.9, 0.8, 0.7],
     'vec__use_idf': [True, False],
-    'vec__lowercase': [True, False],
-    'tt_svr__regressor__alpha': np.linspace(0.0001, 0.1, 10),
-    'tt_svr__regressor__tol': [1e-2, 1e-3, 1e-4]
+    'tt_svr__regressor__alpha': np.linspace(0.0001, 0.1, 20)
 }
 
 grid_cv = GridSearchCV(
