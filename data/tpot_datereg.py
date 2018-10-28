@@ -22,8 +22,11 @@ from tpot_config import regressor_config_dict
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--corpus', type=str)
-parser.add_argument('--dataset', type=str)
+parser.add_argument('--corpus', type=str, required=True)
+parser.add_argument('--dataset', type=str, required=True)
+parser.add_argument('--svd', action='store_true')
+parser.add_argument('--config', type=str)
+parser.add_argument('--verbosity', type=int, default=2)
 parser.add_argument('--n_jobs', type=int, default=1)
 args = parser.parse_args()
 
@@ -50,8 +53,11 @@ vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(2, 4), max_df=0.8,
 X = [stories[id] for id in knowns]
 X = vectorizer.fit_transform(X)
 y = np.array(dates)
-svd = TruncatedSVD(n_components=50)
-X = svd.fit_transform(X)
+if args.svd:
+    svd = TruncatedSVD(n_components=50)
+    X = svd.fit_transform(X)
+else:
+    X = X.todense()
 
 bins = np.linspace(1840, 2020, 15)
 y_binned = np.digitize(y, bins)
@@ -60,9 +66,10 @@ skf = list(StratifiedKFold(n_splits=5).split(np.zeros(y.shape[0]), y_binned))
 scaler = MinMaxScaler()
 y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
-tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=skf,
-                     config_dict=regressor_config_dict, n_jobs=args.n_jobs,
-                     scoring='r2',
-                     periodic_checkpoint_folder='tpot')
+tpot = TPOTRegressor(
+    generations=100, population_size=100, verbosity=args.verbosity, cv=skf,
+    config_dict=regressor_config_dict if args.config is None else args.config,
+    n_jobs=args.n_jobs, scoring='r2', periodic_checkpoint_folder='tpot'
+)
 tpot.fit(X, y)
 tpot.export('tpot_datereg_pipeline.py')
