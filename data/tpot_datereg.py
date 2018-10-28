@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 
 from sklearn.compose import TransformedTargetRegressor
+from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score, mean_absolute_error
@@ -16,6 +17,9 @@ from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
 from tpot import TPOTRegressor
 import unidecode
+
+from tpot_config import regressor_config_dict
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--corpus', type=str)
@@ -46,16 +50,18 @@ vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(2, 4), max_df=0.8,
 X = [stories[id] for id in knowns]
 X = vectorizer.fit_transform(X)
 y = np.array(dates)
+svd = TruncatedSVD(n_components=50)
+X = svd.fit_transform(X)
 
 bins = np.linspace(1840, 2020, 15)
 y_binned = np.digitize(y, bins)
-skf = StratifiedKFold(n_splits=5).split(np.zeros(y.shape[0]), y_binned)
+skf = list(StratifiedKFold(n_splits=5).split(np.zeros(y.shape[0]), y_binned))
 
 scaler = MinMaxScaler()
 y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
 tpot = TPOTRegressor(generations=100, population_size=100, verbosity=3, cv=skf,
-                     config_dict=regressor_config_sparse, n_jobs=30,
+                     config_dict=regressor_config_dict, n_jobs=args.n_jobs,
                      scoring='r2',
                      periodic_checkpoint_folder='tpot')
 tpot.fit(X, y)
