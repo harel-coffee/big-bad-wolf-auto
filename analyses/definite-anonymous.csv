@@ -13,7 +13,7 @@ KLUIS PLA 421 B 10,1850,0,0.0,1,0,Anonymous,picture book,1,1,0.0,1,1,0,0,334,(ri
 KW NOM ZZ 08,1850,0,1.0,1,1,Anonymous,verhaal,0,0,1.0,1,1,0,0,60,verhaal,no,1855,False
 KLUIS PLA 417 A 1,1850,0,0.0,1,0,Anonymous,picture book,1,1,1.0,1,1,0,0,330,(rijmend) gedicht,yes,1875,False
 KLUIS PLA 423 B 25,1850,1,0.0,1,0,Anonymous,picture book,1,1,0.0,1,1,0,0,298,picture story,no,1875,False
-KLUIS PLA 422 A 4,1850,0,1.0,1,0,Anonymous,picture book,1,1,1.0,1,1,0,0,136,(rijmend) gedicht,no,1875,False
+KLUIS PLA 422 A 4,1850,0,1.0,1,0,Anonymous,picture book,1,1,1.0,1,1,0,0,136,(rijmend) gedicht,yes,1875,False
 KLUIS PLA 416 B 36,1850,0,1.0,1,0,Anonymous,picture book,1,1,1.0,1,1,0,0,283,picture story,no,1875,False
 KLUIS PLA 418 A 30,1850,0,0.0,1,1,Anonymous,picture book,1,1,0.0,1,1,0,0,342,picture story,no,1875,False
 KLUIS PLA 422 C 5,1850,0,0.0,1,0,Anonymous,picture book,1,1,1.0,1,1,0,0,226,(rijmend) gedicht,no,1875,False
@@ -43,13 +43,13 @@ NBM Mfe 6219,1888,1,0.0,2,1,Pieter Louwerse,verhaal,1,1,0.0,1,1,0,0,2911,verhaal
 KW BJ 48439,1889,0,1.0,2,1,Fredericus Hendrikus van Leent,(rijmend) gedicht,0,0,1.0,0,0,0,0,114,(rijmend) gedicht,no,1889,True
 NBM Mfe 19093,1890,1,0.0,2,1,Anonymous,verhaal,0,0,0.0,0,0,0,0,960,verhaal,no,1895,False
 KW XKC 199,1890,0,1.0,2,0,Anonymous,verhaal,0,0,1.0,0,0,0,0,467,verhaal,no,1895,False
-KW Ki 5105,1890,1,0.0,2,0,Hapax,verhaal,0,0,0.0,1,1,0,0,892,verhaal,no,1895,False
+KW Ki 5105,1890,1,0.0,2,0,Hapax,verhaal,0,0,0.0,1,1,0,0,892,verhaal,yes,1895,False
 KW BJ Z 2018,1890,1,0.0,2,1,Anonymous,verhaal,0,0,0.0,0,0,0,0,524,verhaal,no,1895,False
 KW SMC K 1196,1890,1,0.0,2,0,Anonymous,verhaal,1,1,0.0,1,1,0,0,657,verhaal,no,1895,False
 NBM Mfe 16087,1891,0,0.0,2,0,Fredericus Hendrikus van Leent,verhaal,1,0,0.0,1,1,0,0,721,verhaal,no,1891,True
 KW NOM V 36 B,1892,1,0.0,2,1,Hapax,verhaal,0,0,0.0,0,0,0,0,644,verhaal,no,1892,True
 NBM Mfe 9851,1893,1,0.0,2,0,Agatha (1833-1893) pseud. van Reinoudina de Goeje,verhaal,1,0,0.0,1,1,0,0,682,verhaal,no,1893,True
-NBM Mfm 701 400004,1893,1,0.0,2,0,Agatha (1833-1893) pseud. van Reinoudina de Goeje,verhaal,0,0,0.0,0,0,0,0,910,verhaal,yes,1893,True
+NBM Mfm 701 400004,1893,1,0.0,2,0,Agatha (1833-1893) pseud. van Reinoudina de Goeje,verhaal,0,0,0.0,0,0,0,0,910,verhaal,no,1893,True
 KW BJ 01926,1894,0,0.0,2,1,Johan Jacob Antonie Goeverneur,verhaal,0,0,0.0,0,0,0,0,1376,verhaal,yes,1894,True
 NBM Mfe 10595,1898,1,0.0,2,0,Hapax,verhaal,0,1,0.0,1,1,0,0,997,verhaal,no,1898,True
 KW 1087 A 38,1900,1,0.0,2,0,Anonymous,verhaal,0,0,0.0,0,0,0,0,943,verhaal,no,1905,False
@@ -227,7 +227,7 @@ VE 40013 2,1975,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,543,verhaal,no,1975,
 FD 1976 40104,1975,0,1.0,4,1,Anonymous,picture book,1,1,1.0,1,1,0,0,128,picture book,no,1975,True
 FF 1977 4,1976,1,0.0,4,1,Lea Smulders,verhaal,1,1,0.0,1,1,0,0,638,verhaal,no,1976,True
 FF 1976 40005,1976,0,0.0,4,1,Hapax,verhaal,1,1,0.0,1,1,0,0,1066,verhaal,no,1976,True
-FD 1976 369,1976,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,780,verhaal,no,1976,True
+FD 1976 369,1976,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,780,verhaal,yes,1976,True
 KW BJ 53432,1976,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,720,picture book,no,1976,True
 FF 1977 2,1977,1,0.0,4,0,Richard Macclure Scarry,picture book,1,1,0.0,1,1,0,0,625,picture book,no,1977,True
 KW XKY 325,1977,0,0.0,4,1,Hapax,verhaal,1,0,0.0,0,1,0,0,619,verhaal,no,1977,True
@@ -273,8 +273,8 @@ VD 1701 1-1,1985,0,0.0,4,1,Hapax,picture book,1,0,0.0,1,1,0,0,783,picture book,n
 FA 1985 60,1985,1,0.0,4,0,Hetty van den Heuvel,verhaal,1,0,0.0,1,1,0,0,2100,verhaal,no,1985,True
 FF 1985 40010,1985,1,0.0,4,1,Hetty van den Heuvel,verhaal,1,1,0.0,1,1,0,0,1171,verhaal,no,1985,True
 FA 1986 82,1985,1,0.0,4,1,Hapax,verhaal,0,0,0.0,0,0,0,0,889,verhaal,no,1985,True
-KW BJ 53474,1985,1,0.0,4,1,Lea Smulders,verhaal,1,0,0.0,1,1,0,0,693,verhaal,no,1985,True
-6000772,1986,1,0.0,4,1,Lea Smulders,verhaal,1,0,0.0,1,1,0,0,693,verhaal,yes,1985,True
+KW BJ 53474,1985,1,0.0,4,1,Lea Smulders,verhaal,1,0,0.0,1,1,0,0,693,verhaal,yes,1985,True
+6000772,1986,1,0.0,4,1,Lea Smulders,verhaal,1,0,0.0,1,1,0,0,693,verhaal,no,1985,True
 FX 1986 19,1986,1,0.0,4,0,Lisbeth Zwerger,picture book,1,1,0.0,1,1,0,0,814,picture book,no,1986,True
 6000164,1987,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,1128,picture book,no,1987,True
 4003594,1987,0,1.0,4,1,Walter Elias Disney,verhaal,1,0,1.0,1,1,0,0,1174,verhaal,yes,1983,True
@@ -282,15 +282,15 @@ FX 1986 19,1986,1,0.0,4,0,Lisbeth Zwerger,picture book,1,1,0.0,1,1,0,0,814,pictu
 KW XKZ 1230,1988,1,0.0,4,0,Anonymous,verhaal,1,0,0.0,1,1,0,0,1326,verhaal,no,1988,True
 2023946,1988,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,284,picture book,no,1988,True
 2019055,1988,1,0.0,4,0,Hapax,verhaal,0,0,0.0,0,0,0,0,888,verhaal,yes,1988,True
-5012859,1988,1,0.0,4,1,Suzanne Braam,verhaal,0,0,0.0,0,0,0,0,1283,verhaal,no,1988,True
+5012859,1988,1,0.0,4,1,Suzanne Braam,verhaal,0,0,0.0,0,0,0,0,1283,verhaal,yes,1988,True
 3004598,1988,0,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,1505,picture book,no,1988,True
 6000818,1988,1,0.0,4,1,Anonymous,verhaal,0,0,0.0,1,1,0,0,812,verhaal,no,1988,True
 3002206,1988,1,0.0,4,0,Anonymous,verhaal,1,1,0.0,1,1,0,0,289,verhaal,no,1988,True
 7000083,1988,1,0.0,4,1,Hapax,picture book,1,1,0.0,1,1,0,0,569,picture book,no,1988,True
 KW BJ 52455,1989,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,1246,picture book,no,1989,True
-5025648,1989,1,0.0,4,1,Suzanne Braam,verhaal,0,0,0.0,0,0,0,0,1280,verhaal,yes,1988,True
+5025648,1989,1,0.0,4,1,Suzanne Braam,verhaal,0,0,0.0,0,0,0,0,1280,verhaal,no,1988,True
 KW XKR 0354,1989,0,1.0,4,1,Anonymous,verhaal,0,1,1.0,1,1,0,0,230,verhaal,no,1989,True
-2022446,1989,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,759,verhaal,yes,1974,True
+2022446,1989,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,759,verhaal,no,1974,True
 KW BJ 52253,1989,1,0.0,4,1,Anonymous,verhaal,1,0,0.0,1,1,0,0,765,verhaal,no,1989,True
 4162374,1989,1,0.0,4,0,Hapax,(rijmend) gedicht,0,0,0.0,0,0,0,0,1312,(rijmend) gedicht,no,1989,True
 5026200,1989,0,0.0,4,0,Anonymous,verhaal,1,1,0.0,1,1,0,0,441,verhaal,no,1989,True
@@ -375,16 +375,15 @@ KW XKR 5390,2004,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,1220,picture book,
 4212901,2004,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,1166,verhaal,no,2004,True
 KW XKZ 1210,2004,1,0.0,4,0,Anonymous,picture book,1,0,0.0,1,1,0,0,964,picture book,no,2004,True
 5201886,2005,1,0.0,4,1,Anonymous,verhaal,0,0,0.0,1,1,0,0,1708,verhaal,no,2005,True
-3013533,2005,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,1399,verhaal,yes,2005,True
+3013533,2005,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,1399,verhaal,no,2005,True
 3014574,2005,1,0.0,4,0,Marianne Busser,verhaal,1,1,0.0,1,1,0,0,2043,verhaal,no,2005,True
-5212462,2005,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,1399,verhaal,no,2005,True
+5212462,2005,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,1399,verhaal,yes,2005,True
 3007625,2005,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,342,picture book,no,2005,True
 3010628,2005,1,0.0,4,0,Hapax,picture book,1,1,0.0,1,1,0,0,1152,picture book,no,2005,True
 KW XKZ 1862,2006,1,0.0,4,1,Anonymous,verhaal,1,1,0.0,1,1,0,0,867,verhaal,no,2006,True
 5229033,2006,0,0.0,4,0,Hapax,verhaal,1,1,1.0,1,1,0,0,964,verhaal,no,2004,True
 4227076,2006,0,0.0,4,0,Hapax,verhaal,0,1,0.0,1,1,0,0,808,verhaal,no,2006,True
 KW GW P100009,2006,0,1.0,4,0,Hapax,anders,1,0,1.0,1,1,0,0,171,picture book,no,2006,True
-4229105,2006,0,0.0,4,0,Hapax,picture book,1,1,,1,1,0,0,95,picture book,no,2006,True
 5230610,2007,0,1.0,4,0,Hapax,picture book,1,1,1.0,1,1,0,0,533,picture book,no,2007,True
 4248580,2007,1,0.0,4,0,Hapax,picture book,1,0,0.0,1,1,0,0,1010,picture book,no,2007,True
 5235107,2007,1,0.0,4,0,Anonymous,picture book,1,1,0.0,1,1,0,0,846,picture book,no,2007,True
