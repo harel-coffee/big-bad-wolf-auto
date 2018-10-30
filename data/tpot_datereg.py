@@ -15,6 +15,7 @@ from sklearn.metrics import r2_score, mean_absolute_error
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.utils import shuffle
 from tpot import TPOTRegressor
 import unidecode
 
@@ -24,8 +25,6 @@ from tpot_config import regressor_config_dict
 parser = argparse.ArgumentParser()
 parser.add_argument('--corpus', type=str, required=True)
 parser.add_argument('--dataset', type=str, required=True)
-parser.add_argument('--svd', action='store_true')
-parser.add_argument('--config', type=str)
 parser.add_argument('--verbosity', type=int, default=2)
 parser.add_argument('--n_jobs', type=int, default=1)
 args = parser.parse_args()
@@ -43,21 +42,23 @@ for entry in os.scandir(args.corpus):
 knowns, dates = zip(*df[df['exact_date']][['id', 'year_corrected']].values)
 unknowns, unkdates = zip(*df[~df['exact_date']][['id', 'year_corrected']].values)
 
+def split_into_chunks(x, size=3000):
+    for i in range(0, len(x), size):
+        chunk = x[i: i + size]
+        if len(chunk) == size:
+            yield chunk
+
+vectorizer = TfidfVectorizer(
+    analyzer='char', ngram_range=(1, 4), max_df=1.0,
+    lowercase=False, sublinear_tf=True, min_df=2, norm='l1', use_idf=False
+)
+
 X = [unidecode.unidecode(' '.join(stories[id].split())) for id in knowns]
+X, dates = zip(*[(s, d) for x, d in zip(X, dates) for s in split_into_chunks(x)])
 y = np.array(dates)
-
-vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(2, 4), max_df=0.8,
-                             lowercase=False, sublinear_tf=True, min_df=20,
-                             use_idf=False)
-
-X = [stories[id] for id in knowns]
 X = vectorizer.fit_transform(X)
 y = np.array(dates)
-if args.svd:
-    svd = TruncatedSVD(n_components=50)
-    X = svd.fit_transform(X)
-else:
-    X = X.todense()
+X, y = shuffle(X, y)
 
 bins = np.linspace(1840, 2020, 15)
 y_binned = np.digitize(y, bins)
@@ -68,7 +69,7 @@ y = scaler.fit_transform(y.reshape(-1, 1)).squeeze()
 
 tpot = TPOTRegressor(
     generations=100, population_size=100, verbosity=args.verbosity, cv=skf,
-    config_dict=regressor_config_dict if args.config is None else args.config,
+    config_dict='TPOT sparse',
     n_jobs=args.n_jobs, scoring='r2', periodic_checkpoint_folder='tpot'
 )
 tpot.fit(X, y)
