@@ -133,4 +133,4 @@ if __name__ == '__main__':
     unk_rows = df['id'].isin(unknowns)
     df.loc[unk_rows, 'year_estimated'] = df.loc[unk_rows, 'id'].apply(lambda id: preds.get(id))
     assert (df.loc[~unk_rows, 'year_corrected'] == df.loc[~unk_rows, 'year_estimated']).all()
-    # df.fillna().to_csv(args.dataset, index=False)
+    df.fillna('').to_csv(args.dataset, index=False)
