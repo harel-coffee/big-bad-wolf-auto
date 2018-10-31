@@ -35,7 +35,15 @@ for entry in os.scandir(args.corpus):
 knowns, dates = zip(*df[df['exact_date']][['id', 'year_corrected']].values)
 unknowns, unkdates = zip(*df[~df['exact_date']][['id', 'year_corrected']].values)
 
+def split_into_chunks(x, size=3000):
+    for i in range(0, len(x), size):
+        chunk = x[i: i + size]
+        if len(chunk) == size:
+            yield chunk
+
 X = [unidecode.unidecode(' '.join(stories[id].split())) for id in knowns]
+X, dates = zip(*[(s, d) for x, d in zip(X, dates) for s in split_into_chunks(x)])
+
 y = np.array(dates)
 
 pipeline = Pipeline([
@@ -46,7 +54,7 @@ pipeline = Pipeline([
 
 grid = {
     'vec__analyzer': ['char', 'char_wb'],
-    'vec__ngram_range': [(2, 4), (2, 5)],
+    'vec__ngram_range': [(1, 4)],
     'vec__min_df': [1, 5, 10, 20, 50],
     'vec__sublinear_tf': [True, False],
     'vec__max_df': [1.0, 0.9, 0.8, 0.7],
