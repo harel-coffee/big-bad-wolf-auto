@@ -1,20 +1,44 @@
-library(arm)
 library(brms)
+library(lme4)
 require(gridExtra)
 library(scales)
 library(tidyr)
 library(tidybayes)
 library(cowplot)
 library(OneR)
+library(effects)
+library(car)
 
-                                        # 5, 1820
-df <- read.csv("defnite.csv")
-df <- df[df$year >= 1820,]
-df$rrh = as.factor(df$rrh)
-df$wolf = as.factor(df$wolf)
-df$opening = as.factor(df$opening)
-df$timebin = as.integer(bin(df$year, 5, method="length"))
-df_rrh <- df[df$opening == 0,]
+
+df <- read.csv("definite-anonymous.csv")
+## df <- df[df$reprint == "no",]
+df$year = df$year_corrected
+df = df[df$year >= 1875,]
+df$rrh = factor(df$rrh, levels=0:1, labels=c("indefinite", "definite"))
+df$rrh_new = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
+df$wolf = factor(df$wolf, levels=0:1, labels=c("indefinite", "definite"))
+df$opening = factor(
+    df$opening, levels=0:1, labels=c("non-traditional", "traditional"))
+df$timebin = as.integer(bin(df$year_corrected, 6, method="length"))
+
+df$picture_wolf = factor(df$picture_wolf + df$wolf_cover, levels=0:1, labels=c("no", "yes"))
+df$picture_rrh = factor(df$picture_rrh + df$rrh_cover, levels=0:1, labels=c("no", "yes"))
+
+minmax <- function(x) {
+    (x - min(x)) / (max(x) - min(x))
+}
+
+df$year = ((df$year_corrected %/% 10 * 10) - mean(df$year_corrected)) / 100
+
+## df$year = scale(df$year_corrected)
+
+df$length = scale(log(df$length))
+
+df$any_picture_rrh = factor(
+    df$any_picture_rrh - df$rrh_cover, levels=0:1, labels=c("no", "yes"))
+df$any_picture_wolf = factor(
+    df$any_picture_wolf - df$wolf_cover, levels=0:1, labels=c("no", "yes"))
+df_rrh <- df[df$opening == "non-traditional",]
 
 periods = character(length(unique(df$timebin)))
 for (i in unique(df$timebin)) {
@@ -22,30 +46,80 @@ for (i in unique(df$timebin)) {
                         max(df[df$timebin == i,]$year) %/% 10 * 10, sep="")
 }
 periods
-
+table(df$timebin)
 
 ## ////////////////////////////////////////////////////////////////////
 ## The wolf
 ## ////////////////////////////////////////////////////////////////////
 
-brm_wolf <- brm(wolf ~ timebin, data = df,
-                prior = c(set_prior("student_t(7,0,1)", class = "b")),
-                family = "bernoulli", iter = 8000, sample_prior = TRUE)
-summary(brm_wolf)
-plot(brm_wolf)
+m = glm(wolf ~ year + picture_wolf + length, data=df, family = "binomial")
+summary(m)
+Anova(m)
+plot(effect("year", m))
+
+m = glm(rrh_new ~ year + picture_rrh + length, data=df, family = "binomial")
+summary(m)
+Anova(m)
+plot(effect("year", m))
+
+m = glm(rrh_new ~ scale(year) + picture_rrh + length, data=df_rrh, family = "binomial")
+summary(m)
+Anova(m)
+plot(effect("length", m))
+
+m = glm(opening ~ year + length, data=df, family = binomial("logit"))
+summary(m)
+Anova(m)
+
+brm.wolf <- brm(wolf ~ any_picture_wolf + year + length,
+                data = df,
+                control = list(adapt_delta=0.999),
+                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
+                family = "bernoulli", sample_prior = TRUE)
+summary(brm.wolf)
+plot(brm.wolf)
+
+brm.wolf <- brm(rrh_new ~ any_picture_rrh + year + length + genre,
+                data = df,
+                control = list(adapt_delta=0.999),
+                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
+                family = "bernoulli", sample_prior = TRUE)
+summary(brm.wolf)
+plot(brm.wolf)
+
+
+brm.wolf.author <- brm(wolf ~ any_picture_wolf + scale(year) + (1|author),
+                data = df,
+                control = list(adapt_delta=0.999),
+                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
+                family = "bernoulli", sample_prior = TRUE)
+summary(brm.wolf.author)
+loo(brm.wolf, brm.wolf.author)
+
+
+brm.wolf <- stan_glmer(wolf ~ any_picture_wolf + scale(year) + (1|author),
+                       data = df,
+                       prior = student_t(7, 0, 1),
+                       prior_intercept = cauchy(0, 10),
+                       family = "binomial")
+
 
 # Next, what is the probability that timebin has no positive effect?
-mean(posterior_samples(brm_wolf, "timebin") < 0)
-hypothesis(brm_wolf, "timebin < 0") # alternatively
+mean(posterior_samples(brm.wolf, "year") < 0)
+
+plot(hypothesis(brm.wolf, "scaleyear > 0"))
+
+plot(hypothesis(brm.wolf, "any_picture_wolfyes > 0"))
 
 wolf_effect_plot <- df %>%
-    add_fitted_draws(brm_wolf) %>%
-    ggplot(aes(x = timebin, y = wolf)) +
+    add_fitted_draws(brm.wolf) %>%
+    ggplot(aes(x = year, y = wolf)) +
     stat_lineribbon(aes(y = .value), color="#03DAC6") +
     scale_fill_brewer(name="CI", palette = "Greys") +
-    scale_x_discrete(
-        name ="Time period", 
-        limits = periods) +
+    scale_x_continuous() +
+    ## scale_x_discrete(
+    ##     name ="Time period", 
+    ##     limits = periods) +
     scale_y_continuous(
         name = "P(definite introduction)",
         labels = percent,
@@ -78,7 +152,10 @@ exp(quantile(as.matrix(brm_wolf)[,2], probs=c(.5, .025, .975)))
 ## Red Riding Hood
 ## ////////////////////////////////////////////////////////////////////
 
-brm_rrh <- brm(rrh ~ timebin, data = df,
+summary(glm(rrh ~ timebin, data=df, family = "binomial"))
+summary(glmer(rrh ~ timebin + (1|author), data = df, family = "binomial"))
+
+brm_rrh <- brm(rrh_new ~ timebin + any_picture_rrh, data = df,
                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
                family = "bernoulli", iter = 8000, sample_prior=TRUE)
 summary(brm_rrh)
@@ -128,8 +205,10 @@ exp(quantile(as.matrix(brm_rrh)[,2], probs=c(.5, .025, .975)))
 ## Analysis of the effect of time on the presence of formulaic openings
 ## ////////////////////////////////////////////////////////////////////
 
-brm_opening <- brm(opening ~ timebin, data = df,
-                   prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
+brm_opening <- brm(opening ~ timebin + (1|author), data = df,
+                   ## prior = c(set_prior("normal(0, .2)", class = "b")),
+                   prior = c(set_prior("student_t(30, 0, 0.5)", class="b")),
+                   control = list(adapt_delta=0.95),
                    family = "bernoulli", iter = 8000, sample_prior=TRUE)
 summary(brm_opening)
 plot(brm_opening)
@@ -179,10 +258,21 @@ exp(quantile(as.matrix(brm_opening)[,2], probs=c(.5, .025, .975)))
 ## ////////////////////////////////////////////////////////////////////
 
 df_rrh <- df[df$opening == 0,]
-brm_rrh_no_opening <- brm(rrh ~ timebin, data = df_rrh,
+
+summary(glm(rrh ~ timebin + pictures, data=df_rrh, family = "binomial"))
+m = glmer(rrh ~ timebin + (1|author), data=df_rrh, family = "binomial")
+
+m  <- stan_glmer(rrh ~ timebin + (1|author), data=df_rrh, family="binomial",
+                 prior = student_t(df = 7, 0, 1),
+                 prior_intercept = cauchy(0,10))
+
+
+brm_rrh_no_opening <- brm(rrh_new ~ timebin + any_picture_rrh + (1|book_type),
+                          data = df_rrh,
                           prior = c(
                               set_prior("student_t(7, 0, 1)", class = "b")),
-                          family = "bernoulli", iter = 8000, sample_prior = TRUE)
+                          control = list(adapt_delta=0.999),
+                          family = "bernoulli", iter = 8000, sample_prior=TRUE)
 summary(brm_rrh_no_opening)
 plot(brm_rrh_no_opening)
 
@@ -224,3 +314,4 @@ save_plot("rrh_no_opening.png", rrh_no_opening_plots, dpi=300,
           base_aspect_ratio = 1.3)
 
 exp(quantile(as.matrix(brm_rrh_no_opening)[,2], probs=c(.5, .025, .975)))
+

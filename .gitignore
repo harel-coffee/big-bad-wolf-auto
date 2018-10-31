@@ -64,4 +64,7 @@ target/
 .mypy_cache
 .Rproj.user
 .Rhistory
+*.RData
 *.png
+*.pdf
+.ipynb_checkpoints
