@@ -8,310 +8,170 @@ library(cowplot)
 library(OneR)
 library(effects)
 library(car)
+library(purrr)
+library(data.table)
+library(bayesplot)
+library(projpred)
 
+# from Gelman 2007
+# See: http://www.stat.columbia.edu/~gelman/standardize/standardize.R
+rescale <- function (x, binary.inputs){
+# function to rescale by subtracting the mean and dividing by 2 sd's
+  x.obs <- x[!is.na(x)]
+  if (!is.numeric(x)) x <- as.numeric(factor(x))
+  if (length(unique(x.obs))==2){
+    x <- (x - min(x.obs)) / (max(x.obs) - min(x.obs))
+    if (binary.inputs=="0/1") return (x)
+    else if (binary.inputs=="-0.5,0.5") return (x - 0.5)
+    else if (binary.inputs=="center") return (x - mean(x.obs))
+    else if (binary.inputs=="full") return ((x - mean(x.obs)) / (2 * sd(x.obs)))
+  }      
+  else {
+    return ((x - mean(x.obs)) / (2 * sd(x.obs)))
+  }
+}
 
-df <- read.csv("definite-anonymous.csv")
-## df <- df[df$reprint == "no",]
-df$year = df$year_corrected
-df = df[df$year >= 1875,]
-df$rrh = factor(df$rrh, levels=0:1, labels=c("indefinite", "definite"))
-df$rrh_new = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
+df <- read.csv("../data/definite.csv")
+df <- df[df$reprint == "no",] # exclude remaining reprints
+df$year = df$year_estimated# rescale((df$year_estimated - min(df$year_estimated) + 1) / 50) # rescaling is done in resampling datasets below
+df$rrh = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
 df$wolf = factor(df$wolf, levels=0:1, labels=c("indefinite", "definite"))
+df$picture_wolf = rescale(df$picture_wolf, "center")
+df$picture_rrh = rescale(df$picture_rrh, "center")
+df$any_picture_wolf = rescale(df$any_picture_wolf, "center")
+df$any_picture_rrh = rescale(df$any_picture_rrh, "center")
+df$length = rescale(1 + log(df$length))
 df$opening = factor(
     df$opening, levels=0:1, labels=c("non-traditional", "traditional"))
-df$timebin = as.integer(bin(df$year_corrected, 6, method="length"))
+## df$picture_wolf = factor(df$picture_wolf + df$wolf_cover)# + df$wolf_cover, levels=0:1, labels=c("no", "yes"))
+## df$picture_rrh = factor(df$picture_rrh)# + df$rrh_cover, levels=0:1, labels=c("no", "yes"))
+## df$any_picture_rrh = factor(df$any_picture_rrh - df$wolf_cover)
+    ## df$any_picture_rrh - df$rrh_cover, levels=0:1, labels=c("no", "yes"))
+## df$any_picture_wolf = factor(df$any_picture_wolf)
+    ## df$any_picture_wolf - df$wolf_cover, levels=0:1, labels=c("no", "yes"))
+## df$length = scale(log(df$length), scale=F)
+head(df)
 
-df$picture_wolf = factor(df$picture_wolf + df$wolf_cover, levels=0:1, labels=c("no", "yes"))
-df$picture_rrh = factor(df$picture_rrh + df$rrh_cover, levels=0:1, labels=c("no", "yes"))
+## ////////////////////////////////////////////////////////////////////
+## Overimputation based on measurement errors
+## ////////////////////////////////////////////////////////////////////
 
-minmax <- function(x) {
-    (x - min(x)) / (max(x) - min(x))
+overimpute <- function(df, column, subset=NULL, sd=1, scale=FALSE) {
+    df = copy(df)
+    df[subset, column] <- sapply(df[subset, column], partial(rnorm, n=1, sd=sd))
+    if (scale) {
+        df[, column] = (df[, column] - min(df[, column])) / 50
+        df[, column] = rescale(df[, column])
+    }
+    return(df)
 }
 
-df$year = ((df$year_corrected %/% 10 * 10) - mean(df$year_corrected)) / 100
+sd = 9.140180259205387 # from datereg.py on training data
+with_error = df$exact_date == "False"
 
-## df$year = scale(df$year_corrected)
+# compute n datasets with slightly different years for estimated years
+n_sims = 5
+bdf <- lapply(seq_len(n_sims),
+              function (x) overimpute(df, "year", with_error, sd=sd, scale=T))
 
-df$length = scale(log(df$length))
-
-df$any_picture_rrh = factor(
-    df$any_picture_rrh - df$rrh_cover, levels=0:1, labels=c("no", "yes"))
-df$any_picture_wolf = factor(
-    df$any_picture_wolf - df$wolf_cover, levels=0:1, labels=c("no", "yes"))
-df_rrh <- df[df$opening == "non-traditional",]
-
-periods = character(length(unique(df$timebin)))
-for (i in unique(df$timebin)) {
-    periods[i] <- paste(min(df[df$timebin == i,]$year) %/% 10 * 10, "-",
-                        max(df[df$timebin == i,]$year) %/% 10 * 10, sep="")
-}
-periods
-table(df$timebin)
-
+## df$year = minmax(df$year)
 ## ////////////////////////////////////////////////////////////////////
 ## The wolf
 ## ////////////////////////////////////////////////////////////////////
 
-m = glm(wolf ~ year + picture_wolf + length, data=df, family = "binomial")
-summary(m)
-Anova(m)
-plot(effect("year", m))
-
-m = glm(rrh_new ~ year + picture_rrh + length, data=df, family = "binomial")
-summary(m)
-Anova(m)
-plot(effect("year", m))
-
-m = glm(rrh_new ~ scale(year) + picture_rrh + length, data=df_rrh, family = "binomial")
-summary(m)
-Anova(m)
-plot(effect("length", m))
-
-m = glm(opening ~ year + length, data=df, family = binomial("logit"))
-summary(m)
-Anova(m)
-
-brm.wolf <- brm(wolf ~ any_picture_wolf + year + length,
-                data = df,
-                control = list(adapt_delta=0.999),
-                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
-                family = "bernoulli", sample_prior = TRUE)
+brm.wolf <- brm_multiple(wolf ~ any_picture_wolf + year + length,
+                         data = bdf,
+                         control = list(adapt_delta=0.95),
+                         prior = c(set_prior("student_t(7, 0, 2.5)", class = "b")),
+                         family = "bernoulli", sample_prior = TRUE)
 summary(brm.wolf)
 plot(brm.wolf)
 
-brm.wolf <- brm(rrh_new ~ any_picture_rrh + year + length + genre,
-                data = df,
-                control = list(adapt_delta=0.999),
-                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
-                family = "bernoulli", sample_prior = TRUE)
-summary(brm.wolf)
-plot(brm.wolf)
-
-
-brm.wolf.author <- brm(wolf ~ any_picture_wolf + scale(year) + (1|author),
-                data = df,
-                control = list(adapt_delta=0.999),
-                prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
-                family = "bernoulli", sample_prior = TRUE)
-summary(brm.wolf.author)
-loo(brm.wolf, brm.wolf.author)
-
-
-brm.wolf <- stan_glmer(wolf ~ any_picture_wolf + scale(year) + (1|author),
-                       data = df,
-                       prior = student_t(7, 0, 1),
-                       prior_intercept = cauchy(0, 10),
-                       family = "binomial")
-
-
-# Next, what is the probability that timebin has no positive effect?
+# Next, what is the probability that time has no positive effect?
 mean(posterior_samples(brm.wolf, "year") < 0)
+plot(hypothesis(brm.wolf, "year = 0"))
+hypothesis(brm.wolf, "picture_wolf = 0")
 
-plot(hypothesis(brm.wolf, "scaleyear > 0"))
+vs.wolf = varsel(brm.wolf, method="forward", cv_method='LOO')
+varsel_plot(vs.wolf, stats = c('elpd', 'rmse', 'acc'), deltas=TRUE)
+(nv <- suggest_size(vs.wolf, alpha=0.32)) # 0.1
+projrhs <- project(vs.wolf, nv = nv, ns = 4000)
+round(colMeans(as.matrix(projrhs)), 1)
+(postint  <- round(posterior_interval(as.matrix(projrhs)),1))
 
-plot(hypothesis(brm.wolf, "any_picture_wolfyes > 0"))
-
-wolf_effect_plot <- df %>%
-    add_fitted_draws(brm.wolf) %>%
-    ggplot(aes(x = year, y = wolf)) +
-    stat_lineribbon(aes(y = .value), color="#03DAC6") +
-    scale_fill_brewer(name="CI", palette = "Greys") +
-    scale_x_continuous() +
-    ## scale_x_discrete(
-    ##     name ="Time period", 
-    ##     limits = periods) +
-    scale_y_continuous(
-        name = "P(definite introduction)",
-        labels = percent,
-        limits = c(0, 1)) +
-    theme(axis.text.x = element_text(angle = 25, vjust=0.6)) + 
-    background_grid(major = "xy", minor = "none")
-
-samples = posterior_samples(brm_wolf, "timebin", as.array = T)
-samples.dens <- density(samples)
-samples.q25 <- quantile(samples, .025)
-samples.q975 <- quantile(samples, .975)
-samples <- with(samples.dens, data.frame(x,y))
-
-wolf_posterior_plot <- qplot(x, y, data = samples, geom = "line",
-                             ylab="density", xlab="estimate") +
-    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
-                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
-    background_grid(major = "xy", minor = "none")
-
-wolf_plots <- plot_grid(wolf_posterior_plot, wolf_effect_plot,
-          labels = c("a)", "b)"), align="h")
-
-save_plot("wolf.png", wolf_plots, dpi=300, base_width=10, base_height=4,
-          base_aspect_ratio = 1.3)
-
-exp(quantile(as.matrix(brm_wolf)[,2], probs=c(.5, .025, .975)))
+mcmc_areas(as.matrix(projrhs), 
+           pars = rownames(postint), transformations=exp)
 
 
 ## ////////////////////////////////////////////////////////////////////
 ## Red Riding Hood
 ## ////////////////////////////////////////////////////////////////////
 
-summary(glm(rrh ~ timebin, data=df, family = "binomial"))
-summary(glmer(rrh ~ timebin + (1|author), data = df, family = "binomial"))
-
-brm_rrh <- brm(rrh_new ~ timebin + any_picture_rrh, data = df,
-               prior = c(set_prior("student_t(7, 0, 1)", class = "b")),
-               family = "bernoulli", iter = 8000, sample_prior=TRUE)
-summary(brm_rrh)
-plot(brm_rrh)
+brm.rrh <- brm_multiple(rrh_new ~ year + any_picture_rrh + length,
+                        data = bdf,
+                        prior = c(set_prior("student_t(7, 0, 2.5)", class = "b")),
+                        family = "bernoulli", sample_prior=TRUE)
+summary(brm.rrh)
+plot(brm.rrh)
 
 # Next, what is the probability that timebin has no positive effect?
-mean(posterior_samples(brm_rrh, "timebin") < 0)
-hypothesis(brm_rrh, "timebin > 0") # alternatively
+mean(posterior_samples(brm.rrh, "year") < 0)
+hypothesis(brm.rrh, "year > 0") # alternatively
+hypothesis(brm.rrh, "any_picture_rrhyes > 0")
 
-rrh_effect_plot <- df %>%
-    add_fitted_draws(brm_rrh) %>%
-    ggplot(aes(x = timebin, y = rrh)) +
-    stat_lineribbon(aes(y = .value), color="#03DAC6") +
-    scale_fill_brewer(name="CI", palette = "Greys") +
-    scale_x_discrete(
-        name ="Time period", 
-        limits = periods) +
-    scale_y_continuous(
-        name = "P(definite introduction)",
-        labels = percent,
-        limits = c(0, 1)) +
-    theme(axis.text.x = element_text(angle = 25, vjust=0.6)) + 
-    background_grid(major = "xy", minor = "none")
+vs.rrh = varsel(brm.rrh, method="forward", cv_method='LOO')
+varsel_plot(vs.rrh, stats = c('elpd', 'rmse', 'acc'), deltas=F)
+(nv <- suggest_size(vs.rrh, alpha=0.32)) # 0.1
+projrhs <- project(vs.rrh, nv = nv, ns = 4000)
+round(colMeans(as.matrix(projrhs)), 1)
+(postint  <- round(posterior_interval(as.matrix(projrhs)),1))
 
-samples = posterior_samples(brm_rrh, "timebin", as.array = T)
-samples.dens <- density(samples)
-samples.q25 <- quantile(samples, .025)
-samples.q975 <- quantile(samples, .975)
-samples <- with(samples.dens, data.frame(x,y))
-
-rrh_posterior_plot <- qplot(x, y, data = samples, geom = "line",
-                             ylab="density", xlab="estimate") +
-    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
-                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
-    background_grid(major = "xy", minor = "none")
-
-rrh_plots <- plot_grid(rrh_posterior_plot, rrh_effect_plot,
-          labels = c("a)", "b)"), align="h")
-
-save_plot("rrh.png", rrh_plots, dpi=300, base_width=10, base_height=4,
-          base_aspect_ratio = 1.3)
-
-exp(quantile(as.matrix(brm_rrh)[,2], probs=c(.5, .025, .975)))
+mcmc_areas(as.matrix(projrhs), 
+           pars = rownames(postint))
 
 
 ## ////////////////////////////////////////////////////////////////////
 ## Analysis of the effect of time on the presence of formulaic openings
 ## ////////////////////////////////////////////////////////////////////
 
-brm_opening <- brm(opening ~ timebin + (1|author), data = df,
-                   ## prior = c(set_prior("normal(0, .2)", class = "b")),
-                   prior = c(set_prior("student_t(30, 0, 0.5)", class="b")),
-                   control = list(adapt_delta=0.95),
-                   family = "bernoulli", iter = 8000, sample_prior=TRUE)
-summary(brm_opening)
-plot(brm_opening)
+brm.opening <- brm_multiple(opening ~ year,
+                            data = bdf,
+                            prior = c(set_prior("student_t(7, 0, 2.5)", class="b")),
+                            family = "bernoulli", sample_prior=TRUE)
+summary(brm.opening)
+plot(brm.opening)
 
-mean(posterior_samples(brm_opening, "timebin") > 0)
-hypothesis(brm_opening, "timebin = 0")
-
-opening_effect_plot <- df %>%
-    add_fitted_draws(brm_opening) %>%
-    ggplot(aes(x = timebin, y = opening)) +
-    stat_lineribbon(aes(y = .value), color="#03DAC6") +
-    scale_fill_brewer(name="CI", palette = "Greys") +
-    scale_x_discrete(
-        name ="Time period", 
-        limits = periods) +
-    scale_y_continuous(
-        name = "P(definite introduction)",
-        labels = percent,
-        limits = c(0, 1)) +
-    theme(axis.text.x = element_text(angle = 25, vjust=0.6)) + 
-    background_grid(major = "xy", minor = "none")
-
-samples = posterior_samples(brm_opening, "timebin", as.array = T)
-samples.dens <- density(samples)
-samples.q25 <- quantile(samples, .025)
-samples.q975 <- quantile(samples, .975)
-samples <- with(samples.dens, data.frame(x,y))
-
-opening_posterior_plot <- qplot(x, y, data = samples, geom = "line",
-                             ylab="density", xlab="estimate") +
-    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
-                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
-    background_grid(major = "xy", minor = "none")
-
-opening_plots <- plot_grid(opening_posterior_plot, opening_effect_plot,
-                           labels = c("a)", "b)"), align="h")
-
-save_plot("opening.png", opening_plots, dpi=300, base_width=10, base_height=4,
-          base_aspect_ratio = 1.3)
-
-
-exp(quantile(as.matrix(brm_opening)[,2], probs=c(.5, .025, .975)))
-
+mean(posterior_samples(brm.opening, "year") < 0)
+hypothesis(brm.opening, "year > 0")
 
 ## ////////////////////////////////////////////////////////////////////
 ## RRH without opening
 ## ////////////////////////////////////////////////////////////////////
 
-df_rrh <- df[df$opening == 0,]
+df_rrh <- df[df$opening == "non-traditional",]
+with_error_rrh <- df_rrh$exact_date == "False"
 
-summary(glm(rrh ~ timebin + pictures, data=df_rrh, family = "binomial"))
-m = glmer(rrh ~ timebin + (1|author), data=df_rrh, family = "binomial")
+n_sims = 5
+bdf_rrh <- lapply(seq_len(n_sims),
+              function (x) overimpute(df_rrh, "year", with_error_rrh, sd=sd, scale=T))
 
-m  <- stan_glmer(rrh ~ timebin + (1|author), data=df_rrh, family="binomial",
-                 prior = student_t(df = 7, 0, 1),
-                 prior_intercept = cauchy(0,10))
-
-
-brm_rrh_no_opening <- brm(rrh_new ~ timebin + any_picture_rrh + (1|book_type),
-                          data = df_rrh,
-                          prior = c(
-                              set_prior("student_t(7, 0, 1)", class = "b")),
-                          control = list(adapt_delta=0.999),
-                          family = "bernoulli", iter = 8000, sample_prior=TRUE)
+brm_rrh_no_opening <- brm_multiple(rrh_new ~ year + any_picture_rrh + length,
+                                   data = bdf_rrh,
+                                   prior = c(
+                                       set_prior("student_t(7, 0, 2.5)", class = "b")),
+                                   control = list(adapt_delta=0.95),                                   
+                                   family = "bernoulli", sample_prior=TRUE)
 summary(brm_rrh_no_opening)
 plot(brm_rrh_no_opening)
 
-hypothesis(brm_rrh_no_opening, "timebin > 0")
+hypothesis(brm_rrh_no_opening, "year > 0")
 
-rrh_no_opening_effect_plot <- df %>%
-    add_fitted_draws(brm_rrh_no_opening) %>%
-    ggplot(aes(x = timebin, y = rrh)) +
-    stat_lineribbon(aes(y = .value), color="#03DAC6") +
-    scale_fill_brewer(name="CI", palette = "Greys") +
-    scale_x_discrete(
-        name ="Time period", 
-        limits = periods) +
-    scale_y_continuous(
-        name = "P(definite introduction)",
-        labels = percent,
-        limits = c(0, 1)) +
-    theme(axis.text.x = element_text(angle = 25, vjust=0.6)) + 
-    background_grid(major = "xy", minor = "none")
+vs.rrh.no.opening = varsel(brm_rrh_no_opening, method="forward", cv_method='LOO')
+varsel_plot(vs.rrh.no.opening, stats = c('elpd', 'rmse', 'acc'), deltas=F)
+(nv <- suggest_size(vs.rrh.no.opening, alpha=0.32)) # 0.1
+projrhs <- project(vs.rrh.no.opening, nv = nv, ns = 4000)
+round(colMeans(as.matrix(projrhs)), 1)
+(postint  <- round(posterior_interval(as.matrix(projrhs)),1))
 
-samples = posterior_samples(brm_rrh_no_opening, "timebin", as.array = T)
-samples.dens <- density(samples)
-samples.q25 <- quantile(samples, .025)
-samples.q975 <- quantile(samples, .975)
-samples <- with(samples.dens, data.frame(x,y))
-
-rrh_no_opening_posterior_plot <- qplot(x, y, data = samples, geom = "line",
-                                       ylab="density", xlab="estimate") +
-    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
-                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
-    background_grid(major = "xy", minor = "none")
-
-rrh_no_opening_plots <- plot_grid(rrh_no_opening_posterior_plot,
-                                  rrh_no_opening_effect_plot,
-                           labels = c("a)", "b)"), align="h")
-
-save_plot("rrh_no_opening.png", rrh_no_opening_plots, dpi=300,
-          base_width=10, base_height=4,
-          base_aspect_ratio = 1.3)
-
-exp(quantile(as.matrix(brm_rrh_no_opening)[,2], probs=c(.5, .025, .975)))
-
+mcmc_areas(as.matrix(projrhs), 
+           pars = rownames(postint))
