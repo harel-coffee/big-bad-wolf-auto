@@ -33,23 +33,11 @@ rescale <- function (x, binary.inputs){
 
 df <- read.csv("../data/definite.csv")
 df <- df[df$reprint == "no",] # exclude remaining reprints
-df$year = df$year_estimated# rescale((df$year_estimated - min(df$year_estimated) + 1) / 50) # rescaling is done in resampling datasets below
+df$year = df$year_estimated
 df$rrh = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
 df$wolf = factor(df$wolf, levels=0:1, labels=c("indefinite", "definite"))
-df$picture_wolf = rescale(df$picture_wolf, "center")
-df$picture_rrh = rescale(df$picture_rrh, "center")
-df$any_picture_wolf = rescale(df$any_picture_wolf, "center")
-df$any_picture_rrh = rescale(df$any_picture_rrh, "center")
-df$length = rescale(1 + log(df$length))
-df$opening = factor(
-    df$opening, levels=0:1, labels=c("non-traditional", "traditional"))
-## df$picture_wolf = factor(df$picture_wolf + df$wolf_cover)# + df$wolf_cover, levels=0:1, labels=c("no", "yes"))
-## df$picture_rrh = factor(df$picture_rrh)# + df$rrh_cover, levels=0:1, labels=c("no", "yes"))
-## df$any_picture_rrh = factor(df$any_picture_rrh - df$wolf_cover)
-    ## df$any_picture_rrh - df$rrh_cover, levels=0:1, labels=c("no", "yes"))
-## df$any_picture_wolf = factor(df$any_picture_wolf)
-    ## df$any_picture_wolf - df$wolf_cover, levels=0:1, labels=c("no", "yes"))
-## df$length = scale(log(df$length), scale=F)
+df$any_picture_wolf = df$any_picture_wolf - df$wolf_cover
+df$any_picture_rrh = df$any_picture_rrh - df$rrh_cover
 head(df)
 
 ## ////////////////////////////////////////////////////////////////////
@@ -70,18 +58,17 @@ sd = 9.140180259205387 # from datereg.py on training data
 with_error = df$exact_date == "False"
 
 # compute n datasets with slightly different years for estimated years
-n_sims = 5
+n_sims = 10
 bdf <- lapply(seq_len(n_sims),
               function (x) overimpute(df, "year", with_error, sd=sd, scale=T))
 
-## df$year = minmax(df$year)
 ## ////////////////////////////////////////////////////////////////////
 ## The wolf
 ## ////////////////////////////////////////////////////////////////////
 
-brm.wolf <- brm_multiple(wolf ~ any_picture_wolf + year + length,
+brm.wolf <- brm_multiple(wolf ~ (any_picture_wolf + year),
                          data = bdf,
-                         control = list(adapt_delta=0.95),
+                         control = list(adapt_delta=0.99),
                          prior = c(set_prior("student_t(7, 0, 2.5)", class = "b")),
                          family = "bernoulli", sample_prior = TRUE)
 summary(brm.wolf)
@@ -89,39 +76,101 @@ plot(brm.wolf)
 
 # Next, what is the probability that time has no positive effect?
 mean(posterior_samples(brm.wolf, "year") < 0)
-plot(hypothesis(brm.wolf, "year = 0"))
-hypothesis(brm.wolf, "picture_wolf = 0")
+hypothesis(brm.wolf, "year < 0")
+hypothesis(brm.wolf, "any_picture_wolf > 0")
+
+samples = posterior_samples(brm.wolf, "year", as.array = T)
+samples.dens <- density(samples)
+samples.q25 <- quantile(samples, .025)
+samples.q975 <- quantile(samples, .975)
+samples <- with(samples.dens, data.frame(x,y))
+
+wolf_year_density <- qplot(x, y, data = samples, geom = "line",
+                      ylab="density", xlab="estimate") +
+    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
+                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
+    background_grid(major = "xy", minor = "none")
+
+samples = posterior_samples(brm.wolf, "any_picture_wolf", as.array = T)
+samples.dens <- density(samples)
+samples.q25 <- quantile(samples, .025)
+samples.q975 <- quantile(samples, .975)
+samples <- with(samples.dens, data.frame(x,y))
+
+wolf_picture_density <- qplot(x, y, data = samples, geom = "line",
+                      ylab="density", xlab="estimate") +
+    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
+                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
+    background_grid(major = "xy", minor = "none")
+
+wolf_plots <- cowplot::plot_grid(wolf_year_density, wolf_picture_density,
+                        labels = c("a)", "b)"), align="h")
+
+cowplot::save_plot("../images/wolf.png", wolf_plots, dpi=300, base_width=10, base_height=4,
+          base_aspect_ratio = 1.3)
 
 vs.wolf = varsel(brm.wolf, method="forward", cv_method='LOO')
-varsel_plot(vs.wolf, stats = c('elpd', 'rmse', 'acc'), deltas=TRUE)
-(nv <- suggest_size(vs.wolf, alpha=0.32)) # 0.1
+varsel_plot(vs.wolf, stats = c('elpd', 'rmse', 'acc'), deltas=F)
+(nv <- suggest_size(vs.wolf, alpha=0.1)) # 0.1
 projrhs <- project(vs.wolf, nv = nv, ns = 4000)
-round(colMeans(as.matrix(projrhs)), 1)
-(postint  <- round(posterior_interval(as.matrix(projrhs)),1))
+round(colMeans(as.matrix(projrhs)), 3)
+(postint  <- round(posterior_interval(as.matrix(projrhs), prob=0.95),3))
 
-mcmc_areas(as.matrix(projrhs), 
-           pars = rownames(postint), transformations=exp)
+mcmc_areas_ridges(as.matrix(projrhs), pars = rownames(postint),
+           transformations=exp, prob_outer=0.99, )
 
 
 ## ////////////////////////////////////////////////////////////////////
 ## Red Riding Hood
 ## ////////////////////////////////////////////////////////////////////
 
-brm.rrh <- brm_multiple(rrh_new ~ year + any_picture_rrh + length,
+brm.rrh <- brm_multiple(rrh ~ (year + any_picture_rrh) + opening,
                         data = bdf,
-                        prior = c(set_prior("student_t(7, 0, 2.5)", class = "b")),
+                        control = list(adapt_delta=0.99),
+                        prior = c(set_prior("student_t(7, 0, 2.5)", class="b")),
                         family = "bernoulli", sample_prior=TRUE)
 summary(brm.rrh)
 plot(brm.rrh)
 
-# Next, what is the probability that timebin has no positive effect?
+# Next, what is the probability that time has no positive effect?
 mean(posterior_samples(brm.rrh, "year") < 0)
 hypothesis(brm.rrh, "year > 0") # alternatively
-hypothesis(brm.rrh, "any_picture_rrhyes > 0")
+hypothesis(brm.rrh, "any_picture_rrh > 0")
+
+samples = posterior_samples(brm.rrh, "year", as.array = T)
+samples.dens <- density(samples)
+samples.q25 <- quantile(samples, .025)
+samples.q975 <- quantile(samples, .975)
+samples <- with(samples.dens, data.frame(x,y))
+
+rrh_year_density <- qplot(x, y, data = samples, geom = "line",
+                      ylab="density", xlab="estimate") +
+    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
+                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
+    background_grid(major = "xy", minor = "none")
+
+samples = posterior_samples(brm.rrh, "any_picture_rrh", as.array = T)
+samples.dens <- density(samples)
+samples.q25 <- quantile(samples, .025)
+samples.q975 <- quantile(samples, .975)
+samples <- with(samples.dens, data.frame(x,y))
+
+rrh_picture_density <- qplot(x, y, data = samples, geom = "line",
+                      ylab="density", xlab="estimate") +
+    geom_ribbon(data = subset(samples, x > samples.q25 & x < samples.q975),
+                aes(ymax = y), ymin = 0, fill="#03DAC6", alpha = 0.8) +
+    background_grid(major = "xy", minor = "none")
+
+rrh_plots <- cowplot::plot_grid(rrh_year_density, rrh_picture_density,
+                        labels = c("a)", "b)"), align="h")
+
+cowplot::save_plot("../images/rrh.png", rrh_plots, dpi=300, base_width=10, base_height=4,
+          base_aspect_ratio = 1.3)
+
 
 vs.rrh = varsel(brm.rrh, method="forward", cv_method='LOO')
 varsel_plot(vs.rrh, stats = c('elpd', 'rmse', 'acc'), deltas=F)
-(nv <- suggest_size(vs.rrh, alpha=0.32)) # 0.1
+(nv <- suggest_size(vs.rrh, alpha=0.1))
 projrhs <- project(vs.rrh, nv = nv, ns = 4000)
 round(colMeans(as.matrix(projrhs)), 1)
 (postint  <- round(posterior_interval(as.matrix(projrhs)),1))
@@ -142,36 +191,4 @@ summary(brm.opening)
 plot(brm.opening)
 
 mean(posterior_samples(brm.opening, "year") < 0)
-hypothesis(brm.opening, "year > 0")
-
-## ////////////////////////////////////////////////////////////////////
-## RRH without opening
-## ////////////////////////////////////////////////////////////////////
-
-df_rrh <- df[df$opening == "non-traditional",]
-with_error_rrh <- df_rrh$exact_date == "False"
-
-n_sims = 5
-bdf_rrh <- lapply(seq_len(n_sims),
-              function (x) overimpute(df_rrh, "year", with_error_rrh, sd=sd, scale=T))
-
-brm_rrh_no_opening <- brm_multiple(rrh_new ~ year + any_picture_rrh + length,
-                                   data = bdf_rrh,
-                                   prior = c(
-                                       set_prior("student_t(7, 0, 2.5)", class = "b")),
-                                   control = list(adapt_delta=0.95),                                   
-                                   family = "bernoulli", sample_prior=TRUE)
-summary(brm_rrh_no_opening)
-plot(brm_rrh_no_opening)
-
-hypothesis(brm_rrh_no_opening, "year > 0")
-
-vs.rrh.no.opening = varsel(brm_rrh_no_opening, method="forward", cv_method='LOO')
-varsel_plot(vs.rrh.no.opening, stats = c('elpd', 'rmse', 'acc'), deltas=F)
-(nv <- suggest_size(vs.rrh.no.opening, alpha=0.32)) # 0.1
-projrhs <- project(vs.rrh.no.opening, nv = nv, ns = 4000)
-round(colMeans(as.matrix(projrhs)), 1)
-(postint  <- round(posterior_interval(as.matrix(projrhs)),1))
-
-mcmc_areas(as.matrix(projrhs), 
-           pars = rownames(postint))
+hypothesis(brm.opening, "year < 0")

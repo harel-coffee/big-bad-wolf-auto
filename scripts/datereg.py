@@ -30,7 +30,7 @@ def split_into_chunks(x, size=3000):
             yield chunk
 
 
-def error_plot(y_test, y_pred, fname):
+def error_plot(y_test, y_pred, fname, xlabel="True years"):
     plt.clf()
     label = "$R^2 = {:0.3f}$".format(r2_score(y_test, y_pred))
     ax = sns.scatterplot(y_test, y_pred, hue=abs(y_test - y_pred),
@@ -38,7 +38,7 @@ def error_plot(y_test, y_pred, fname):
     ax.set_ylim(1825, 2020)
     ax.set_xlim(1825, 2020)
     ax.plot(ax.get_xlim(), ax.get_ylim(), ls="--", c=".3", label='ideal fit')
-    ax.set_xlabel("True years")
+    ax.set_xlabel(xlabel)
     ax.set_ylabel("Predicted years")
     sns.despine(ax=ax, offset=10)
     ax.set_aspect(1.)
@@ -54,7 +54,7 @@ def error_plot(y_test, y_pred, fname):
     rax.set_ylabel("Residuals")
     rax.set_xlabel("Predicted years")
     sns.despine(ax=rax, offset=10)
-    plt.savefig(fname)
+    plt.savefig(fname, dpi=300)
 
 
 if __name__ == '__main__':
@@ -112,9 +112,9 @@ if __name__ == '__main__':
     y_test, y_pred = np.array(trues), np.array(preds)
     print("R2 ", r2_score(y_test, y_pred))
     AE = np.abs(y_test - y_pred)
-    print("MAE", AE.mean(), AE.std())
+    print("MAE", AE.mean(), AE.std(), AE.var())
 
-    error_plot(y_test, y_pred, "scatterplot-train.pdf")
+    error_plot(y_test, y_pred, "../images/scatterplot-train.png")
 
     regressor.fit(X, y)
     X_target = [unidecode.unidecode(' '.join(stories[id].split())) for id in unknowns]
@@ -124,13 +124,13 @@ if __name__ == '__main__':
     y_pred = regressor.predict(X_target)
     y_pred[y_pred > y.max()] = y.max()
     AE = np.abs(y_test - y_pred)
-    print("MAE", AE.mean(), AE.std())
+    print("MAE", AE.mean(), AE.std(), AE.var())
 
-    error_plot(y_test, y_pred, "scatterplot-eval.pdf")
+    error_plot(y_test, y_pred, "../images/scatterplot-eval.png", xlabel="Estimated years")
 
     preds = {id: pred for id, pred in zip(unknowns, y_pred)}
     df['year_estimated'] = df['year_corrected']
     unk_rows = df['id'].isin(unknowns)
     df.loc[unk_rows, 'year_estimated'] = df.loc[unk_rows, 'id'].apply(lambda id: preds.get(id))
     assert (df.loc[~unk_rows, 'year_corrected'] == df.loc[~unk_rows, 'year_estimated']).all()
-    df.fillna('').to_csv(args.dataset, index=False)
+    #df.fillna('').to_csv(args.dataset, index=False)
