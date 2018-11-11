@@ -36,8 +36,9 @@ df <- df[df$reprint == "no",] # exclude remaining reprints
 df$year = df$year_estimated
 df$rrh = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
 df$wolf = factor(df$wolf, levels=0:1, labels=c("indefinite", "definite"))
-df$any_picture_wolf = df$any_picture_wolf - df$wolf_cover
-df$any_picture_rrh = df$any_picture_rrh - df$rrh_cover
+df$any_picture_wolf = rescale(df$any_picture_wolf - df$wolf_cover, "center")
+df$any_picture_rrh = rescale(df$any_picture_rrh - df$rrh_cover, "center")
+df$opening_scaled = rescale(df$opening, "center")
 head(df)
 
 ## ////////////////////////////////////////////////////////////////////
@@ -58,7 +59,7 @@ sd = 9.140180259205387 # from datereg.py on training data
 with_error = df$exact_date == "False"
 
 # compute n datasets with slightly different years for estimated years
-n_sims = 10
+n_sims = 100
 bdf <- lapply(seq_len(n_sims),
               function (x) overimpute(df, "year", with_error, sd=sd, scale=T))
 
