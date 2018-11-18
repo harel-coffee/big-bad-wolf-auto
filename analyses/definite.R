@@ -12,73 +12,60 @@ library(purrr)
 library(data.table)
 library(bayesplot)
 library(projpred)
+library(standardize)
+library(sjstats)
 
-# from Gelman 2007
-# See: http://www.stat.columbia.edu/~gelman/standardize/standardize.R
-rescale <- function (x, binary.inputs){
-# function to rescale by subtracting the mean and dividing by 2 sd's
-  x.obs <- x[!is.na(x)]
-  if (!is.numeric(x)) x <- as.numeric(factor(x))
-  if (length(unique(x.obs))==2){
-    x <- (x - min(x.obs)) / (max(x.obs) - min(x.obs))
-    if (binary.inputs=="0/1") return (x)
-    else if (binary.inputs=="-0.5,0.5") return (x - 0.5)
-    else if (binary.inputs=="center") return (x - mean(x.obs))
-    else if (binary.inputs=="full") return ((x - mean(x.obs)) / (2 * sd(x.obs)))
-  }      
-  else {
-    return ((x - mean(x.obs)) / (2 * sd(x.obs)))
-  }
-}
 
 df <- read.csv("../data/definite.csv")
 df <- df[df$reprint == "no",] # exclude remaining reprints
 df$year = df$year_estimated
 df$rrh = factor(df$rrh_new, levels=0:1, labels=c("indefinite", "definite"))
 df$wolf = factor(df$wolf, levels=0:1, labels=c("indefinite", "definite"))
-df$any_picture_wolf = rescale(df$any_picture_wolf - df$wolf_cover, "center")
-df$any_picture_rrh = rescale(df$any_picture_rrh - df$rrh_cover, "center")
-df$opening_scaled = rescale(df$opening, "center")
+df$any_picture_wolf = as.factor(df$any_picture_wolf - df$wolf_cover)
+df$any_picture_rrh = as.factor(df$any_picture_rrh - df$rrh_cover)
+df$opening = as.factor(df$opening)
 head(df)
 
 ## ////////////////////////////////////////////////////////////////////
 ## Overimputation based on measurement errors
 ## ////////////////////////////////////////////////////////////////////
 
-overimpute <- function(df, column, subset=NULL, sd=1, scale=FALSE) {
+overimpute <- function(df, column, reference, subset=NULL, sd=1) {
     df = copy(df)
     df[subset, column] <- sapply(df[subset, column], partial(rnorm, n=1, sd=sd))
-    if (scale) {
-        df[, column] = (df[, column] - min(df[, column])) / 50
-        df[, column] = rescale(df[, column])
-    }
+    df = predict(reference, newdata = df, random=F, response=T)
     return(df)
 }
 
 sd = 9.140180259205387 # from datereg.py on training data
 with_error = df$exact_date == "False"
 
-# compute n datasets with slightly different years for estimated years
-n_sims = 100
-bdf <- lapply(seq_len(n_sims),
-              function (x) overimpute(df, "year", with_error, sd=sd, scale=T))
-
 ## ////////////////////////////////////////////////////////////////////
 ## The wolf
 ## ////////////////////////////////////////////////////////////////////
 
-brm.wolf <- brm_multiple(wolf ~ (any_picture_wolf + year),
+regr = standardize(wolf ~ any_picture_wolf + year, data=df, family = "binomial", scale=0.5)
+
+# compute n datasets with slightly different years for estimated years
+n_sims = 100
+bdf <- lapply(seq_len(n_sims),
+              function (x) overimpute(df, "year", regr, with_error, sd=sd))
+
+auto_prior(regr$formula, regr$data, gaussian = F)
+
+brm.wolf <- brm_multiple(regr$formula,
                          data = bdf,
                          control = list(adapt_delta=0.99),
-                         prior = c(set_prior("student_t(7, 0, 2.5)", class = "b")),
+                         prior = c(set_prior("normal(0, 2.5)", class="b", coef="any_picture_wolf1"),
+                                   set_prior("normal(0, 5.0)", class="b", coef="year"),
+                                   set_prior("normal(0, 10)", class="Intercept")),
                          family = "bernoulli", sample_prior = TRUE)
 summary(brm.wolf)
-plot(brm.wolf)
 
 # Next, what is the probability that time has no positive effect?
 mean(posterior_samples(brm.wolf, "year") < 0)
 hypothesis(brm.wolf, "year < 0")
-hypothesis(brm.wolf, "any_picture_wolf > 0")
+hypothesis(brm.wolf, "any_picture_wolf1 > 0")
 
 samples = posterior_samples(brm.wolf, "year", as.array = T)
 samples.dens <- density(samples)
@@ -124,19 +111,29 @@ mcmc_areas_ridges(as.matrix(projrhs), pars = rownames(postint),
 ## ////////////////////////////////////////////////////////////////////
 ## Red Riding Hood
 ## ////////////////////////////////////////////////////////////////////
+regr = standardize(rrh ~ any_picture_rrh + year + opening, data=df, family = "binomial", scale=0.5)
 
-brm.rrh <- brm_multiple(rrh ~ (year + any_picture_rrh) + opening_scaled,
+# compute n datasets with slightly different years for estimated years
+n_sims = 100
+bdf <- lapply(seq_len(n_sims),
+              function (x) overimpute(df, "year", regr, with_error, sd=sd))
+
+auto_prior(regr$formula, regr$data, gaussian = F)
+
+brm.rrh <- brm_multiple(regr$formula,
                         data = bdf,
                         control = list(adapt_delta=0.99),
-                        prior = c(set_prior("student_t(7, 0, 2.5)", class="b")),
+                        prior = c(set_prior("normal(0, 2.5)", class="b", coef="any_picture_rrh1"),
+                                  set_prior("normal(0, 5.0)", class="b", coef="year"),
+                                  set_prior("normal(0, 2.5)", class="b", coef="opening1"),
+                                  set_prior("normal(0, 10)", class="Intercept")),
                         family = "bernoulli", sample_prior=TRUE)
 summary(brm.rrh)
-plot(brm.rrh)
 
 # Next, what is the probability that time has no positive effect?
 mean(posterior_samples(brm.rrh, "year") < 0)
 hypothesis(brm.rrh, "year > 0") # alternatively
-hypothesis(brm.rrh, "any_picture_rrh > 0")
+hypothesis(brm.rrh, "any_picture_rrh1 > 0")
 
 samples = posterior_samples(brm.rrh, "year", as.array = T)
 samples.dens <- density(samples)
@@ -183,13 +180,21 @@ mcmc_areas(as.matrix(projrhs),
 ## ////////////////////////////////////////////////////////////////////
 ## Analysis of the effect of time on the presence of formulaic openings
 ## ////////////////////////////////////////////////////////////////////
+regr = standardize(opening ~ year, data=df, family = "binomial", scale=0.5)
 
-brm.opening <- brm_multiple(opening ~ year,
+# compute n datasets with slightly different years for estimated years
+n_sims = 100
+bdf <- lapply(seq_len(n_sims),
+              function (x) overimpute(df, "year", regr, with_error, sd=sd))
+
+auto_prior(regr$formula, regr$data, gaussian = F)
+
+brm.opening <- brm_multiple(regr$formula,
                             data = bdf,
-                            prior = c(set_prior("student_t(7, 0, 2.5)", class="b")),
+                            prior = c(set_prior("normal(0, 5.0)", class="b"),
+                                      set_prior("normal(0, 10)", class="Intercept")),
                             family = "bernoulli", sample_prior=TRUE)
 summary(brm.opening)
-plot(brm.opening)
 
 mean(posterior_samples(brm.opening, "year") < 0)
-hypothesis(brm.opening, "year < 0")
+hypothesis(brm.opening, "year > 0")
