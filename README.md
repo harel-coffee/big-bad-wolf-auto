@@ -1,4 +1,6 @@
-# Cultural Entrenchment of Folktales is Encoded in Language ![full paper](https://link)
+# Cultural Entrenchment of Folktales is Encoded in Language 
+
+![full paper](https://link)
 
 The repository hosts the code and data to reproduce the analysis presented in Karsdorp,
 F. & Fonteyn, L. (2019). 'Cultural Entrenchment of Folktales is Encoded in Language'. All
