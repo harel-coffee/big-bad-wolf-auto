@@ -1,6 +1,6 @@
 # Cultural Entrenchment of Folktales is Encoded in Language 
 
-![full paper](https://link)
+![full paper](https://www.nature.com/articles/s41599-019-0234-9)
 
 The repository hosts the code and data to reproduce the analysis presented in Karsdorp,
 F. & Fonteyn, L. (2019). 'Cultural Entrenchment of Folktales is Encoded in Language'. All
@@ -30,5 +30,10 @@ lxml==4.2.1, matplotlib==3.0.2, numpy==1.15.4, pandas==0.23.4, seaborn==0.9.0, t
 @article{karsdorp_fonteyn:2019,
   author = {Folgert Karsdorp and Lauren Fonteyn},
   title = {Cultural Entrenchment is Encoded in Language},
+  journal = {Palgrave Communications},
+  volume = {5},
+  year = {2019},
+  doi = {10.1057/s41599-019-0234-9},
+  url = {https://www.nature.com/articles/s41599-019-0234-9}
 }
 ```
